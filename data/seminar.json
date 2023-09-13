@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Griya Wulansari",
+    "lat": -6.23806981636409,
+    "long": 106.9950757131152,
+    "img": "/assets/seminar/wulansari.jpg",
+    "region": "Bekasi",
+    "address": "Jl. Kemakmuran No.15, Marga Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17141",
+    "is_active": 1,
+    "time": "Selasa, 13,00 - 16.00"
+  },
+  {
+    "id": 2,
+    "name": "RM Sederhana",
+    "lat": -6.341998986348492,
+    "long": 106.9072260432447,
+    "img": "/assets/seminar/sederhana.jpg",
+    "region": "Jakarta 1",
+    "address": "Jl. Raya Cilangkap No.33, RT.2/RW.2, Cilangkap, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13840",
+    "is_active": 1,
+    "time": "Ahad, 13.00 - 16.00"
+  },
+  {
+    "id": 3,
+    "name": "CSO Tebet",
+    "lat": -6.229415081580555,
+    "long": 106.85390221226348,
+    "img": "/assets/seminar/wulansari.jpg",
+    "region": "Jakarta 2",
+    "address": "Ruko Tebet Mas No. 4 Jl. Tebet Raya, Jakarta Selatan",
+    "is_active": 1,
+    "time": "Sabtu, 14.00 - 17.00"
+  },
+  {
+    "id": 4,
+    "name": "RM PARI GOGO",
+    "lat": -6.1860414913486865,
+    "long": 106.63942808793422,
+    "img": "/assets/seminar/parigogo.jpg",
+    "region": "Tangerang",
+    "address": "Jl. Veteran, RT.003/RW.004, Babakan, Kec. Tangerang, Kota Tangerang, Banten 15118",
+    "is_active": 1,
+    "time": "Jumat, 15.00 - 18.00"
+  },
+  {
+    "id": 5,
+    "name": "GRIYA ALAM",
+    "lat": -6.554718804805128,
+    "long": 106.86193904772273,
+    "img": "/assets/seminar/wulansari.jpg",
+    "region": "Bogor",
+    "address": "Perumahan Griya Alam Kav 1, Babakan Madang, Sentul City, Bogor",
+    "is_active": 1,
+    "time": ""
+  }
+]

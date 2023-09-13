@@ -1,0 +1,56 @@
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { allBlogs } from "contentlayer/generated";
+
+import { CardBestSeller, CardBlog } from "@/components/ui/Card";
+
+interface Artikel {
+  src: string;
+  alt: string;
+  category: string;
+  title: string;
+  date: string;
+}
+
+export default function Artikel(allBlogs: Artikel) {
+  const blogDir = "blogs";
+
+  const files = fs.readdirSync(path.join(blogDir));
+
+  const blogs = files.map((filename) => {
+    const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
+
+    const { data: frontMatter } = matter(fileContent);
+
+    return {
+      meta: frontMatter,
+      slug: filename.replace(".mdx", ""),
+    };
+  });
+  return (
+    <>
+      <main className="flex flex-col md:px-28 px-4 mt-7">
+        <h1 className="text-3xl font-bold">Artikel Smart Sinergy World</h1>
+
+        <section className="py-10">
+          <h2 className="text-2xl font-bold">Artikel Terbaru</h2>
+
+          <div className="py-5 grid md:grid-cols-3 grid-cols-1 gap-5 gap-y-10">
+            {blogs.map((blog) => (
+              <CardBlog
+                key={blog.slug}
+                href={"/artikel/" + blog.slug}
+                src={blog.meta.image}
+                alt={blog.meta.title}
+                category={blog.meta.category}
+                title={blog.meta.title}
+                date={blog.meta.date}
+              />
+            ))}
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}
