@@ -9,7 +9,7 @@ interface sizeProps{
 const Logo: React.FC<sizeProps> = ({ width, height }) => {
   return (
       <Image
-        src="/logo/SswLogo.svg"
+        src="/logo/logo-ssw.svg"
         width={width}
         height={height}
         alt="Logo SSW"

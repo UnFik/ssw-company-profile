@@ -10,6 +10,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import Nav from "./Nav";
+import Image from "next/image";
 import Breadcrumb from "./Breadcrumb";
 
 const TOP_OFFSET = 60;
@@ -18,7 +19,12 @@ const Navbar = () => {
   return (
     <div className="text-text-primary dark:bg-d-background dark:text-d-text-primary md:pr-15 sticky top-0 z-20 mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between bg-transparent py-4 pl-5 pr-10 font-sans font-bold uppercase text-white dark:border-gray-800 lg:pl-0">
       <Link href="/" className="flex gap-2">
-        <Logo width={56} height={56} />
+        <Image
+          src="/logo/logo-ssw.svg"
+          width={56}
+          height={56}
+          alt="Logo SSW"
+        />
         <div className="m-auto hidden justify-center text-center font-semibold md:flex">
           SMART SINERGY WORLD
         </div>
@@ -40,7 +46,12 @@ export const NavbarBlog = () => {
     <div>
       <div className="dark:bg-d-background dark:text-d-text-primary md:pr-15 sticky top-0 z-20 mx-auto flex flex-col w-full flex-wrap items-start justify-between bg-[#181818] py-4  font-sans font-bold uppercase text-white dark:border-gray-800 lg:pl-0">
         <Link href="/" className="flex md:container px-2 gap-4">
-          <Logo width={56} height={56} />
+          <Image
+            src="/logo/logo-ssw.svg"
+            width={56}
+            height={56}
+            alt="Logo SSW"
+          />
           <div className="my-auto font-semibold md:flex">
             SMART SINERGY WORLD
           </div>

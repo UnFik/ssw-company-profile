@@ -1,19 +1,10 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { allBlogs } from "contentlayer/generated";
 
-import { CardBestSeller, CardBlog } from "@/components/ui/Card";
+import { CardBlog } from "@/components/ui/Card";
 
-interface Artikel {
-  src: string;
-  alt: string;
-  category: string;
-  title: string;
-  date: string;
-}
-
-export default function Artikel(allBlogs: Artikel) {
+export default function ArtikelPage() {
   const blogDir = "blogs";
 
   const files = fs.readdirSync(path.join(blogDir));
