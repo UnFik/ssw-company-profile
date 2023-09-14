@@ -3,6 +3,12 @@ import path from "path";
 import matter from "gray-matter";
 
 import { CardBlog } from "@/components/ui/Card";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Artikel | Smart Sinergy World",
+  description: "Smart Sinergy World",
+};
 
 function ArtikelPage() {
   const blogDir = "blogs";

@@ -19,10 +19,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/Accordion";
 import Footer from "@/components/ui/Footer";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 export default function Home() {
   return (
     <>
+    <ScrollToTop />
       <div className="relative bg-[url('/assets/header.png')] bg-center bg-no-repeat md:bg-fixed bg-cover">
         <Navbar />
         <div className="lg:px-20 flex justify-center items-center">
@@ -401,6 +403,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      
     </>
   );
 }
