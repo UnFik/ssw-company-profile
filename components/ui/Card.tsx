@@ -141,7 +141,7 @@ export const CardMitra: React.FC<mitraProps> = ({
   harga,
 }) => {
   return (
-    <Card className="shadow-xl mx-auto rounded-lg w-80 border-none">
+    <Card className="shadow-xl rounded-lg w-10/12 md:w-5/12 lg:w-3/12 border-none">
       <CardHeader>
         <CardTitle className="text-center border-b-2 border-gray pb-3 uppercase">
           {title}
@@ -155,7 +155,7 @@ export const CardMitra: React.FC<mitraProps> = ({
             width={20}
             height={18}
           />
-          <h6 className="text-lg font-base text-gray-500 tracking-wide">
+          <h6 className="md:text-lg text-base font-base text-gray-500 tracking-wide">
             {hak} Hak <span className="font-semibold text-black">Usaha</span>
           </h6>
         </div>
@@ -166,7 +166,7 @@ export const CardMitra: React.FC<mitraProps> = ({
             width={20}
             height={18}
           />
-          <h6 className="text-lg font-base text-gray-500 tracking-wide italic">
+          <h6 className="md:text-lg text-base font-base text-gray-500 tracking-wide italic">
             <span className="font-semibold text-black not-italic">
               {produk} Produk
             </span>{" "}
@@ -180,7 +180,7 @@ export const CardMitra: React.FC<mitraProps> = ({
             width={20}
             height={18}
           />
-          <h6 className="text-lg font-base text-gray-500 tracking-wide">
+          <h6 className="md:text-lg text-base font-base text-gray-500 tracking-wide">
             Keuntungan Hingga
             <div className="bg-[#F8D65C] font-bold text-black w-9/12 rounded-sm">
               {" "}
@@ -195,7 +195,7 @@ export const CardMitra: React.FC<mitraProps> = ({
             width={20}
             height={18}
           />
-          <h6 className="text-lg font-base text-gray-500 tracking-wide">
+          <h6 className="md:text-lg text-base font-base text-gray-500 tracking-wide">
             Potensi Reward
             <p className="bg-[#F8D65C] font-bold text-black rounded-sm px-[0.1rem]">
               {" "}

@@ -35,7 +35,9 @@ export default function Home() {
               17.000 mitra yang tersebar di seluruh Indonesia bahkan
               mancanegara.
             </h3>
-            <Button className="w-48 py-6 md:mx-0 mx-auto">Join Mitra</Button>
+            <Link href="/formulir">
+              <Button className="w-48 py-6 md:mx-0 mx-auto">Join Mitra</Button>
+            </Link>
           </div>
         </div>
         <div className="md:px-20 highlight text-white w-full h-[18.5rem] flex justify-center items-end">
@@ -76,8 +78,8 @@ export default function Home() {
             </span>
           </h1>
           <div className="card-section grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-7 w-full">
-            <Card className="shadow-xl mx-auto md:w-96">
-              <div className="lg:w-full w-50">
+            <Card className="shadow-xl mx-auto w-11/12">
+              <div className="w-full">
                 <AspectRatio ratio={16 / 9}>
                   <Image
                     width={384}
@@ -92,7 +94,7 @@ export default function Home() {
                 <CardTitle>KEMITRAAN</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="w-80 text-sm font-normal tracking-wide">
+                <p className="w-full text-sm font-normal tracking-wide">
                   Kemitraan dengan Smart Sinergy World membuka pintu kebebasan
                   dari riba dan mewujudkan impian finansial, diiringi
                   nilai-nilai kekeluargaan dan religiusitas yang menjadi pijakan
@@ -111,7 +113,7 @@ export default function Home() {
                 </CardFooter>
               </Link>
             </Card>
-            <Card className="shadow-xl mx-auto md:w-96">
+            <Card className="shadow-xl mx-auto w-11/12">
               <div className="w-full">
                 <AspectRatio ratio={16 / 9}>
                   <Image
@@ -127,7 +129,7 @@ export default function Home() {
                 <CardTitle>PRODUK</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="w-80 text-sm font-normal tracking-wide">
+                <p className="w-full text-sm font-normal tracking-wide">
                   Produk-produk yang kami distribusikan adalah pilihan terbaik
                   untuk memenuhi berbagai kebutuhan Anda, dengan kualitas unggul
                   dan inovasi terbaru untuk meningkatkan kenyamanan dan kepuasan
@@ -146,7 +148,7 @@ export default function Home() {
                 </CardFooter>
               </Link>
             </Card>
-            <Card className="shadow-xl mx-auto md:w-96">
+            <Card className="shadow-xl mx-auto w-11/12">
               <div className="w-full">
                 <AspectRatio ratio={16 / 9}>
                   <Image
@@ -162,7 +164,7 @@ export default function Home() {
                 <CardTitle>SEMINAR</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="w-80 text-sm font-normal tracking-wide">
+                <p className="w-full text-sm font-normal tracking-wide">
                   Platform unggul untuk mengenal berbagai model bisnis, produk,
                   dan mengenai Smart Sinergy World itu sendiri. Seminar yang
                   kami selenggarakan memberikan wawasan lebih untuk meraih
@@ -194,9 +196,7 @@ export default function Home() {
               Sukses <span className="text-primary">Bersama</span>.
             </h1>
             <Link href="tentang-kami" className="mx-auto">
-              <Button className="w-48 py-7 text-xl">
-                About Us
-              </Button>
+              <Button className="w-48 py-7 text-xl">About Us</Button>
             </Link>
           </div>
         </div>
@@ -321,9 +321,11 @@ export default function Home() {
               </CardContent>
             </Link>
           </div>
-          <Button className="w-48 py-6 mt-10 rounded-full mx-auto text-xl">
-            See More
-          </Button>
+          <Link href="produk" className="mx-auto">
+            <Button className="w-48 py-6 mt-10 rounded-full  text-xl">
+              See More
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="bg-container justify-center py-20">

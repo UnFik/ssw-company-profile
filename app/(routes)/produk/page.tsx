@@ -5,18 +5,36 @@ import { CardBestSeller, CardProduk, CardSeminar } from "@/components/ui/Card";
 import React from "react";
 import TabsButton from "@/components/ui/Swiper";
 import produkData from "@/data/produk.json";
+import ProductList from "./components/ProductList";
 
-interface ProdukProps {
-  href: string;
-  src: string;
-  alt: string;
+interface Product {
+  img: string;
+  alt?: string;
   title: string;
   category: string;
+  tagline?: string;
+  priceRange?: {
+    priceMin?: number;
+    priceMax?: number;
+  };
   desc: string;
+  benefit?: string[];
+  linkShopee?: string;
+  content?: {
+    type: string;
+    info: string;
+  }[];
+  instruction?: string;
+  dose?: string[] | string;
+  identity?: {
+    bpom?: string;
+    halalMUI?: string;
+  };
+  linkYoutube?: string;
 }
 
 const ProdukPage = () => {
-  var produ = produkData;
+  var products = produkData;
 
   return (
     <div>
@@ -59,57 +77,20 @@ const ProdukPage = () => {
               </div>
             </div>
           </div>
+          {/* <ProductList /> */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 w-full lg:w-4/6 md:mt-10">
-            <div className="place-self-center  ">
-              {/* produkData.map((produk: ProdukProps, index: number) => () */}
-              
-              <CardProduk
-                src="/assets/produk/ecoracing.png"
-                alt="Eco Racing"
-                href="ecoracing"
-                title="Eco Racing"
-                category="Otomotif"
-                desc="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-              />
-            </div>
-            <div className="place-self-center  ">
-              <CardProduk
-                src="/assets/produk/ecoracing.png"
-                alt="Eco Racing"
-                href="ecoracing"
-                title="Eco Racing"
-                category="Otomotif"
-                desc="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-              />
-            </div>
-            <div className="place-self-center  ">
-              <CardProduk
-                src="/assets/produk/ecoracing.png"
-                alt="Eco Racing"
-                href="ecoracing"
-                title="Eco Racing"
-                category="Otomotif"
-                desc="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-              />
-            </div>
-            <div className="place-self-center  ">
-              <CardProduk
-                src="/assets/produk/ecoracing.png"
-                alt="Eco Racing"
-                href="ecoracing"
-                title="Eco Racing"
-                category="Otomotif"
-                desc="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-              />
-            </div>
+            {products.map((product: Product, index: number) => (
+              <div key={index}>
+                <CardProduk
+                  src={product.img}
+                  alt={`${product.title} Product Image`}
+                  href={`/${product.title}`}
+                  title={product.title}
+                  category={product.category}
+                  desc={product.desc}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

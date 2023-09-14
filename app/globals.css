@@ -80,7 +80,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground h-full overflow-x-hidden;
+    @apply bg-background text-foreground w-full h-full overflow-x-hidden;
   }
 
   #__next {

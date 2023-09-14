@@ -1,7 +1,7 @@
 [
   {
     "img": "/assets/produk/ecoracing.png",
-    "title": "Eco Racing",
+    "title": "Eco-Racing",
     "category": "Otomotif",
     "tagline": "Aditif bahan bakar terbaik dunia",
     "priceRange": {
@@ -75,7 +75,7 @@
   },
   {
     "img": "/assets/produk/ecofarming.png",
-    "title": "ECO FARMING",
+    "title": "ECO-FARMING",
     "category": "Pertanian",
     "tagline": "Lahan subur petani makmur",
     "priceRange": {

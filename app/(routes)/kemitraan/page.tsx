@@ -109,10 +109,9 @@ const page = () => {
         </div>
       </div>
       <div className="relative md:container px-4 py-20">
-        <div className="lg:px-72 absolute top-24 w-full grid grid-cols-3 justify-items-center items-center">
-          <div className="lg:col-span-1 col-span-3 hidden lg:flex"></div>
+        <div className="w-full grid grid-cols-2 justify-items-center items-center">
           <div className="lg:col-span-2 col-span-3">
-            <h3 className="text-2xl font-bold">Potensi Income Mitra SSW</h3>
+            <h3 className="text-3xl font-bold text-center">Potensi Income Mitra SSW</h3>
           </div>
         </div>
         <div className="mt-20 lg:mt-0"></div>
@@ -171,8 +170,7 @@ const page = () => {
         <h1 className="title text-primary w-8/12 text-center mx-auto">
           Pilihan Paket Kemitraan dan Potensinya
         </h1>
-        <div className="flex flex-wrap justify-center gap-12 gap-y-5 mt-10 md:pe-0 pe-8">
-          <div className="md:w-82 w-72">
+        <div className="flex flex-wrap justify-center gap-12 gap-y-5 mt-10 mx-auto w-full">
             <CardMitra
               title="basic"
               hak="1"
@@ -181,8 +179,6 @@ const page = () => {
               reward="1.6"
               harga="2.500.000"
             />
-          </div>
-          <div className="md:w-82 w-72">
             <CardMitra
               title="reguler"
               hak="3"
@@ -191,8 +187,6 @@ const page = () => {
               reward="5"
               harga="7.500.000"
             />
-          </div>
-          <div className="md:w-82 w-72">
             <CardMitra
               title="business"
               hak="7"
@@ -201,8 +195,6 @@ const page = () => {
               reward="15"
               harga="17.500.000"
             />
-          </div>
-          <div className="md:w-82 w-72">
             <CardMitra
               title="executives"
               hak="15"
@@ -211,8 +203,6 @@ const page = () => {
               reward="25"
               harga="37.500.000"
             />
-          </div>
-          <div className="md:w-82 w-72">
             <CardMitra
               title="priority"
               hak="31"
@@ -221,7 +211,6 @@ const page = () => {
               reward="51.7"
               harga="77.500.000"
             />
-          </div>
         </div>
       </div>
       <div className="bg-container py-20">

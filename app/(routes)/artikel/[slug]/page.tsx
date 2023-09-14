@@ -39,7 +39,7 @@ function getArtikel({ slug }: { slug: string }) {
   };
 }
 
-export default function Artikel({ params }: any) {
+export default function ArtikelDetail({ params }: any) {
   const props = getArtikel(params);
 
   return (

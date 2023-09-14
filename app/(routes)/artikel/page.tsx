@@ -4,7 +4,7 @@ import matter from "gray-matter";
 
 import { CardBlog } from "@/components/ui/Card";
 
-export default function ArtikelPage() {
+function ArtikelPage() {
   const blogDir = "blogs";
 
   const files = fs.readdirSync(path.join(blogDir));
@@ -45,3 +45,5 @@ export default function ArtikelPage() {
     </>
   );
 }
+
+export default ArtikelPage;

@@ -21,7 +21,7 @@ const Footer = () => {
               Satu langkah lagi menuju kebebasan finansial
             </div>
             <Link
-              href=""
+              href="/formulir"
               className={`${buttonVariants({
                 variant: "secondary",
               })} w-48 py-7 my-auto`}
@@ -35,13 +35,13 @@ const Footer = () => {
             <div className="text-2xl text-white font-bold mt-5 mb-3">
               Link Terkait
             </div>
-            <Link href="" className="subtitle text-white hover:text-gray-200">
+            <Link href="tentang-kami" className="subtitle text-white hover:text-gray-200">
               Tentang Kami
             </Link>
-            <Link href="" className="subtitle text-white hover:text-gray-200">
+            <Link href="privasi" className="subtitle text-white hover:text-gray-200">
               Kebijakan Privasi
             </Link>
-            <Link href="" className="subtitle text-white hover:text-gray-200">
+            <Link href="ketentuan" className="subtitle text-white hover:text-gray-200">
               Ketentuan Pengguna
             </Link>
           </div>

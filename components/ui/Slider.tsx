@@ -407,6 +407,14 @@ export const GaleriSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (

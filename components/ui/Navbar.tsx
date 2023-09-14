@@ -44,8 +44,8 @@ const Navbar = () => {
 export const NavbarBlog = () => {
   return (
     <div>
-      <div className="dark:bg-d-background dark:text-d-text-primary md:pr-15 sticky top-0 z-20 mx-auto flex flex-col w-full flex-wrap items-start justify-between bg-[#181818] py-4  font-sans font-bold uppercase text-white dark:border-gray-800 lg:pl-0">
-        <Link href="/" className="flex md:container px-2 gap-4">
+      <div className="dark:bg-d-background dark:text-d-text-primary md:pr-15 sticky top-0 z-20 mx-auto flex flex-col w-full flex-wrap items-start justify-between bg-[#181818] py-4 font-sans font-bold uppercase text-white dark:border-gray-800 lg:pl-0">
+        <Link href="/" className="flex md:px-56 px-2 gap-4">
           <Image
             src="/logo/logo-ssw.svg"
             width={56}
@@ -58,7 +58,7 @@ export const NavbarBlog = () => {
         </Link>
       </div>
       <div className="bg-black text-white py-3">
-        <div className="md:container px-4">
+        <div className="md:px-56 px-4">
           <Nav />
         </div>
       </div>
