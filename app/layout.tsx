@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -21,8 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body>
         <NextTopLoader color="#C5A32B" />
+        <ScrollToTop />
+
         {children}
       </body>
     </html>

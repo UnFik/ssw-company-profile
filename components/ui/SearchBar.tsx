@@ -1,6 +1,13 @@
-import React from 'react'
+"use client";
 
-const SearchBar = () => {
+import React, { memo } from "react";
+
+interface searchProps {
+  value: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+const SearchBar: React.FC<searchProps> = ({ onChange }) => {
   return (
     <div className="max-w-md">
       <div className="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden border-2 border-gray-200">
@@ -26,10 +33,11 @@ const SearchBar = () => {
           type="text"
           id="search"
           placeholder="Cari Produk"
+          onChange={onChange}
         />
       </div>
     </div>
   );
-}
+};
 
-export default SearchBar
+export default memo(SearchBar);

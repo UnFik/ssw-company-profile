@@ -19,12 +19,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/Accordion";
 import Footer from "@/components/ui/Footer";
-import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 export default function Home() {
   return (
     <>
-    <ScrollToTop />
       <div className="relative bg-[url('/assets/header.png')] bg-center bg-no-repeat md:bg-fixed bg-cover">
         <Navbar />
         <div className="lg:px-20 flex justify-center items-center">
@@ -121,8 +119,8 @@ export default function Home() {
                   <Image
                     width={384}
                     height={300}
-                    src="/assets/foto-wulansari.jpg"
-                    alt="Seminar SSW Griya Wulansari"
+                    src="/assets/foto-produk.png"
+                    alt="Produk Kemitraan SSW"
                     className="rounded-t-lg object-cover w-auto h-auto"
                   />
                 </AspectRatio>
@@ -391,7 +389,7 @@ export default function Home() {
           <h3 className="md:subtitle text-sm text-center border-b-4 border-primary pb-5">
             Temukan banyak informasi dan pembelajaran di youtube kami.
           </h3>
-          {/* <AspectRatio ratio={16 / 9}>
+          <AspectRatio ratio={16 / 9}>
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/yNcOs7nN134?si=npvOr5gMMLL-gdPN"
@@ -399,7 +397,7 @@ export default function Home() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
-          </AspectRatio> */}
+          </AspectRatio>
         </div>
       </div>
       <Footer />

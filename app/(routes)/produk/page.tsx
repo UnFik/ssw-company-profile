@@ -1,40 +1,80 @@
+"use client";
+
 import { NavbarGeneral } from "@/components/ui/Navbar";
 import SearchBar from "@/components/ui/SearchBar";
 import { CheckboxWithText } from "@/components/ui/checkbox";
-import { CardBestSeller, CardProduk, CardSeminar } from "@/components/ui/Card";
-import React from "react";
+import { CardBestSeller, CardProduk } from "@/components/ui/Card";
+import { useState, useCallback, useMemo, useEffect } from "react";
 import TabsButton from "@/components/ui/Swiper";
 import produkData from "@/data/produk.json";
-import ProductList from "./components/ProductList";
 
-interface Product {
-  img: string;
-  alt?: string;
-  title: string;
-  category: string;
-  tagline?: string;
-  priceRange?: {
-    priceMin?: number;
-    priceMax?: number;
-  };
-  desc: string;
-  benefit?: string[];
-  linkShopee?: string;
-  content?: {
-    type: string;
-    info: string;
-  }[];
-  instruction?: string;
-  dose?: string[] | string;
-  identity?: {
-    bpom?: string;
-    halalMUI?: string;
-  };
-  linkYoutube?: string;
-}
 
 const ProdukPage = () => {
-  var products = produkData;
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [categoryQuantities, setCategoryQuantities] = useState<
+    Record<string, number>
+  >({});
+
+  useEffect(() => {
+    const categoryCounts: Record<string, number> = {};
+
+    produkData.forEach((product) => {
+
+      if (!categoryCounts[product.category]) {
+        categoryCounts[product.category] = 1;
+      } else {
+        categoryCounts[product.category]++;
+      }
+    });
+
+    setCategoryQuantities(categoryCounts);
+  }, []);
+
+  const handleSearchChange = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setSearchQuery(event.target.value);
+    },
+    [setSearchQuery]
+  );
+
+  const handleCategoryChange = useCallback(
+    (category: string) => {
+      if (selectedCategories.includes(category)) {
+        setSelectedCategories((prevCategories) =>
+          prevCategories.filter((c) => c !== category)
+        );
+      } else {
+        setSelectedCategories((prevCategories) => [
+          ...prevCategories,
+          category,
+        ]);
+      }
+    },
+    [selectedCategories]
+  );
+
+  const availableCategories = useMemo(() => {
+    const categories = new Set<string>();
+    produkData.forEach((product) => {
+      categories.add(product.category);
+    });
+    return Array.from(categories);
+  }, []);
+
+  const filteredProducts = useMemo(() => {
+    return produkData.filter((product: Product) => {
+      const matchesSearch =
+        product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.category.toLowerCase().includes(searchQuery.toLowerCase());
+
+      const isSelectedCategory =
+        selectedCategories.length === 0 ||
+        selectedCategories.includes(product.category);
+
+      return matchesSearch && isSelectedCategory;
+    });
+  }, [searchQuery, selectedCategories]);
 
   return (
     <div>
@@ -49,20 +89,20 @@ const ProdukPage = () => {
               <div className="text-2xl font-medium tracking-wide">
                 Pencarian Produk
               </div>
-              <SearchBar />
+              <SearchBar value={searchQuery} onChange={handleSearchChange} />
             </div>
             <div className="category flex flex-col gap-3">
               <div className="text-2xl font-medium tracking-wide">Kategori</div>
               <div className="flex flex-col gap-5">
-                {["Kesehatan", "Kecantikan", "Kendaraan", "Pupuk"].map(
-                  (category) => (
-                    <CheckboxWithText
-                      key={category}
-                      category={category}
-                      quantity={100}
-                    />
-                  )
-                )}
+                {availableCategories.map((category) => (
+                  <CheckboxWithText
+                    key={category}
+                    category={category}
+                    quantity={categoryQuantities[category] || 0}
+                    checked={selectedCategories.includes(category)}
+                    onChange={() => handleCategoryChange(category)}
+                  />
+                ))}
               </div>
             </div>
             <div className="best-seller flex flex-col gap-5">
@@ -79,12 +119,12 @@ const ProdukPage = () => {
           </div>
           {/* <ProductList /> */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 w-full lg:w-4/6 md:mt-10">
-            {products.map((product: Product, index: number) => (
+            {filteredProducts.map((product: Product, index: number) => (
               <div key={index}>
                 <CardProduk
-                  src={product.img}
+                  src={`/assets/produk/${product.title}.webp`}
                   alt={`${product.title} Product Image`}
-                  href={`/${product.title}`}
+                  href={`/${product.title.toLowerCase()}`}
                   title={product.title}
                   category={product.category}
                   desc={product.desc}

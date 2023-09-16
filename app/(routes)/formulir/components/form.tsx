@@ -60,8 +60,6 @@ const FormPdf = () => {
   });
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
-    console.log("onSubmit is called");
-    console.log(data);
     generatePDF(data);
   }
 

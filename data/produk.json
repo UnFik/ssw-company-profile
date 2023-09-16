@@ -1,7 +1,6 @@
 [
   {
-    "img": "/assets/produk/ecoracing.png",
-    "title": "Eco-Racing",
+    "title": "ECO-RACING",
     "category": "Otomotif",
     "tagline": "Aditif bahan bakar terbaik dunia",
     "priceRange": {
@@ -35,10 +34,13 @@
       }
     ],
     "instruction": "Masukkan pil/tablet ke dalam tangki kendaraan Anda sesuai dosis.",
-    "dose": ["Masukkan pil/tablet ke dalam tangki kendaraan Anda sesuai dosis.", "Mobil : 1 pil untuk 20 - 50 liter bensin.","Motor : 1 tablet untuk 4 - 8 liter bensin."]
+    "dose": [
+      "Masukkan pil/tablet ke dalam tangki kendaraan Anda sesuai dosis.",
+      "Mobil : 1 pil untuk 20 - 50 liter bensin.",
+      "Motor : 1 tablet untuk 4 - 8 liter bensin."
+    ]
   },
   {
-    "img": "/assets/produk/habspro.png",
     "title": "HABSPRO",
     "category": "Kesehatan",
     "tagline": "Habbatussauda membantu mengobati semua penyakit",
@@ -46,7 +48,7 @@
       "priceMin": 25000,
       "priceMax": 250000
     },
-    "desc": "HABSPRO adalah produk Habbatussauda yang membantu mengobati berbagai penyakit. Kaya akan manfaat kesehatan.",
+    "desc": "HABSPRO adalah suplemen herbal berbentuk kapsul yang memiliki kandungan utama Habbatussauda Bee Polen dan Propolis. Kombinasi bahan-bahan tersebut mampu meningkatkan stamina dan memberikan banyak manfaat untuk tubuh.",
     "linkShopee": "",
     "benefit": [
       "Sumber gizi terlengkap & baik untuk tulang.",
@@ -60,6 +62,7 @@
       "Dapat menghambat perkembangan kanker.",
       "Meredakan asma dan alergi."
     ],
+    "instruction": "Baik diminum 2 x 2 kapsul per hari, diminum 30 menit sebelum makan.",
     "content": [
       {
         "type": "Botol",
@@ -74,10 +77,9 @@
     "linkYoutube": ""
   },
   {
-    "img": "/assets/produk/ecofarming.png",
     "title": "ECO-FARMING",
     "category": "Pertanian",
-    "tagline": "Lahan subur petani makmur",
+    "tagline": "Pupuk organik super aktif",
     "priceRange": {
       "priceMin": 200000,
       "priceMax": 200000
@@ -103,6 +105,157 @@
       "bpom": "039.OL./Kpts/SR.310/B/01/2020"
     },
     "linkYoutube": ""
+  },
+  {
+    "title": "ECO-VICO",
+    "category": "Suplemen",
+    "tagline": "Minyak Kelapa Murni",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 250000
+    },
+    "desc": "ECO VICO adalah kapsul herbal yang dibuat dari penyulingan minyak kelapa murni yang mengandung asam laurat yang merupakan anti bakteri dan virus. Diproses dengan teknologi canggih dan modern, membuat senyawa esensial di dalamnya tetap utuh sehingga dihasilkan minyak dengan kadar air dan kadar asam lemak bebas yang rendah, warna yang bening, harum, serta memiliki daya simpan lebih dari 12 bulan.",
+    "benefit": [
+      "Menurunkan kolesterol & meningkatkan stamina.",
+      "Melancarkan peredaran darah.",
+      "Mencegah penyakit jantung dan stroke.",
+      "Menangkal bakteri & virus.",
+      "Baik untuk kesehatan kulit dan kesuburan rambut.",
+      "Mencegah pikun dan Alzheimer dan epilepsi.",
+      "Meningkatkan kesehatan tulang dan gigi.",
+      "Meningkatkan kesehatan pencernaan."
+    ],
+    "content": [
+      {
+        "type": "Botol",
+        "info": "1 botol isi 100 kapsul @450 mg"
+      }
+    ],
+    "dose": "Baik diminum 2 x 2 kapsul per hari, diminum 30 menit sebelum makan.",
+    "identity": {
+      "bpom": "BPOM RI TR 203379281"
+    }
+  },
+  {
+    "title": "PILLOW-SLOW-RELEASE",
+    "category": "Pertanian",
+    "tagline": "Pupuk Majemuk Makro dan Mikro",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "Pupuk Majemuk Makro dan Mikro diprioritaskan untuk tanaman batang keras, dengan teknologi tepat guna mampu meningkatkan pertumbuhan daun dan buah sehingga bisa berbuah terus-menerus bahkan berbuah di luar musim dan karena bentuknya padat secara teknis sangat cocok untuk pemupukan di area perkebunan tanpa harus bingung menggunakan air.",
+    "benefit": [
+      "Meningkatkan hasil panen menjadi lebih cepat.",
+      "Meningkatkan imunitas tanaman.",
+      "Meningkatkan kesuburan tanah.",
+      "Memberikan penyerapan pupuk lebih tepat guna.",
+      "Mempercepat pertumbuhan tanaman.",
+      "Menghemat biaya pemupukan."
+    ],
+    "content": [
+      {
+        "type": "Box",
+        "info": "1 box isi 10 sachet @100 g"
+      }
+    ],
+    "instruction": "1. Tanaman usia produktif: 1 sachet pupuk berat 100 g untuk pemupukan 3 bulan sekali.\n2. Tanaman masa vegetatif atau belum berbuah: 2 sendok makan, 1 bulan sekali.",
+    "identity": {
+      "izinEdar": "Izin Edar SK KEMENTAN : 436.OL/Kpts/SR.320/B/O7/2019"
+    }
+  },
+  {
+    "title": "ECO-FARMING-FOTOSINTESA",
+    "category": "Pertanian",
+    "tagline": "Solusi Peningkatan Hasil Pertanian dengan Teknologi Tepat Guna",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "Merupakan pupuk dengan teknologi tepat guna, mengandung 36 unsur hara dan mineral di dalamnya, mampu menciptakan proses fotosintesis secara mandiri, sehingga bisa mengubah zat yang tidak dibutuhkan tanaman menjadi zat yang dibutuhkan tanaman.",
+    "benefit": [
+      "Meningkatkan unsur hara tanah.",
+      "Mengurai bahan organik dalam tanah.",
+      "Meningkatkan pH tanah menjadi normal.",
+      "Mengembalikan kesuburan lahan akibat unsur kimia berlebih.",
+      "Teknologi fotosintesa memaksimalkan pertumbuhan tanaman.",
+      "Tanaman lebih kuat dan sehat.",
+      "Mempercepat masa panen dan memaksimalkan kualitas panen.",
+      "Meringankan biaya produksi pupuk.",
+      "Menekan pemakaian pupuk kimia sintetis 100%."
+    ],
+    "content": [
+      {
+        "type": "Sachet",
+        "info": "1 sachet isi 50 g"
+      }
+    ],
+    "instruction": "Masukkan 1 sachet fotosintesa ke 1 liter air biasa menjadi biang. Gunakan air dengan pH di atas 5. Lebih baik hindari air kaporit, gunakan air gunung atau air sumber mata air.",
+    "identity": {
+      "izinEdar": "Izin Edar SK KEMENTAN : 207.OA/KPTS/SR.320/B/03/2022"
+    }
+  },
+  {
+    "title": "EVITGO-100",
+    "category": "Minuman Kesehatan",
+    "tagline": "Susu Kambing Obat Berbagai Penyakit",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "EVITGO 100 adalah minuman serbuk susu kambing dengan 90% kandungan susu kambing bubuk yang baik untuk kesehatan. Di antaranya, mencegah beberapa macam penyakit dan menjaga tubuh tetap sehat.",
+    "benefit": [
+      "Mencegah penyakit maag.",
+      "Memperbaiki sistem pencernaan.",
+      "Menurunkan panas demam.",
+      "Mencegah penyakit jantung.",
+      "Menurunkan darah tinggi.",
+      "Meredakan nyeri sendi.",
+      "Mencegah penyakit syaraf."
+    ],
+    "content": [
+      {
+        "type": "Box",
+        "info": "1 box isi 10 sachet @20 g"
+      }
+    ],
+    "instruction": "Baik diminum 1 sampai 2 gelas per hari.",
+    "identity": {
+      "bpom": "BPOM RI MD 805010001402",
+      "halalMUI": "No. 12040006311119"
+    }
+  },
+  {
+    "title": "ECOMAXX-&-ECONAXX",
+    "category": "Minuman Kesehatan",
+    "tagline": "Untuk Stamina Pria dan Wanita Dewasa",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "Ecomaxx Coffee & Econaxx Coffee adalah minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria maupun wanita. Ecomaxx Coffee bisa untuk pria dan wanita, sementara Econaxx Coffee dikhususkan untuk pria dewasa.",
+    "benefit": [
+      "Meningkatkan libido pada laki-laki dan perempuan.",
+      "Meningkatkan kesuburan bagi pria.",
+      "Membantu mengurangi gejala menopause.",
+      "Memperbaiki mood atau suasana hati.",
+      "Meningkatkan performa stamina dan tahan lama.",
+      "Rutin dikonsumsi dapat memperbesar alat vitalitas.",
+      "Meningkatkan fungsi otak dan daya ingat.",
+      "Menurunkan risiko penyakit prostat."
+    ],
+    "content": [
+      {
+        "type": "Box",
+        "info": "1 box isi 10 sachet @25 g"
+      }
+    ],
+    "instruction": "Ecomaxx: Baik diminum 1 sachet per hari.\nEconaxx: Tidak boleh melebihi 1 sachet per bulan.",
+    "identity": {
+      "bpom": "BPOM RI MD 867013043071",
+      "halalMUI": "No. SKH0052/SH/LPPOM MUI/IX/2020"
+    }
   }
+
 
 ]
