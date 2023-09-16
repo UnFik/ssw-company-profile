@@ -1,5 +1,4 @@
 interface Product {
-  img: string;
   alt?: string;
   title: string;
   category: string;
@@ -23,3 +22,17 @@ interface Product {
   };
   linkYoutube?: string;
 };
+
+interface Seminar {
+  id: number;
+  name: string;
+  lat?: number;
+  long?: number;
+  img: string;
+  region: string;
+  address?: string;
+  is_active: number;
+  time: string;
+  price: string;
+};
+

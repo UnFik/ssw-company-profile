@@ -8,7 +8,8 @@
     "region": "Bekasi",
     "address": "Jl. Kemakmuran No.15, Marga Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17141",
     "is_active": 1,
-    "time": "Selasa, 13,00 - 16.00"
+    "time": "Selasa, 13,00 - 16.00",
+    "price": "HTM, 25K (Snack Box)"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "region": "Jakarta 1",
     "address": "Jl. Raya Cilangkap No.33, RT.2/RW.2, Cilangkap, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13840",
     "is_active": 1,
-    "time": "Ahad, 13.00 - 16.00"
+    "time": "Ahad, 13.00 - 16.00",
+    "price": "HTM, 30K (Lunch Box)"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "region": "Jakarta 2",
     "address": "Ruko Tebet Mas No. 4 Jl. Tebet Raya, Jakarta Selatan",
     "is_active": 1,
-    "time": "Sabtu, 14.00 - 17.00"
+    "time": "Sabtu, 14.00 - 17.00",
+    "price": "Free"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "region": "Tangerang",
     "address": "Jl. Veteran, RT.003/RW.004, Babakan, Kec. Tangerang, Kota Tangerang, Banten 15118",
     "is_active": 1,
-    "time": "Jumat, 15.00 - 18.00"
+    "time": "Jumat, 15.00 - 18.00",
+    "price": "HTM, 25K (Lunch Box)"
   },
   {
     "id": 5,
@@ -52,6 +56,18 @@
     "region": "Bogor",
     "address": "Perumahan Griya Alam Kav 1, Babakan Madang, Sentul City, Bogor",
     "is_active": 1,
-    "time": ""
+    "time": "",
+    "price":"HTM, 35K (Lunch Box)"
+  },{
+    "id": 6,
+    "name": "RM Sunda Cibiuk",
+    "lat": -6.105448233483051,
+    "long": 106.14757710793113,
+    "img": "/assets/seminar/cibiuk.jpg",
+    "region": "Serang",
+    "address": "Jalan Kelapa Dua, Jl. KH. Sulaeman No.32A, Kagungan, Kec. Serang, Kota Serang, Banten 42112",
+    "is_active": 1,
+    "time": "Ahad, 13.00-16.00",
+    "price": "HTM, 35K (Lunch Box)"
   }
 ]

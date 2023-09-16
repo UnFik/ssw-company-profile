@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { AspectRatio } from "./Aspect-ratio";
+import { Clock9, CircleDollarSign } from "lucide-react";
 
 interface cardImpianProps {}
 
@@ -99,7 +100,7 @@ export const TestiCard: React.FC<TestiProps> = ({
 }) => {
   return (
     <Card className="border bg-card text-card-foreground shadow-xl rounded-lg w-[98%] h-80">
-      <CardHeader className="flex flex-row justify-start w-full content-center gap-5">
+      <CardHeader className="flex flex-row justify-start w-full content-center gap-4">
         <Image
           width={62}
           height={62}
@@ -107,8 +108,8 @@ export const TestiCard: React.FC<TestiProps> = ({
           alt={alt}
           className="rounded-full object-cover h-auto w-auto"
         />
-        <div className="w-full flex flex-col justify-center gap-4 my-auto">
-          <CardTitle className="text-sm md:text-lg text-primary">
+        <div className="w-full flex flex-col justify-center gap-2 my-auto">
+          <CardTitle className="text-sm md:text-lg text-primary text-ellipsis">
             {title}
           </CardTitle>
           <CardDescription className="font-semibold">{desc}</CardDescription>
@@ -213,56 +214,52 @@ export const CardMitra: React.FC<mitraProps> = ({
   );
 };
 
-export const CardSeminar = () => {
+interface CardSeminarProps {
+  src: string;
+  alt: string;
+  title: string;
+  time: string;
+  price: string;
+  region: string;
+  bookLink: string;
+}
+
+export const CardSeminar: React.FC<CardSeminarProps> = ({src, alt, title, time, price, region, bookLink}) => {
   return (
     <Card className="bg-primary shadow-xl mx-auto w-80">
       <div className="header bg-primary w-full py-4 rounded-t-lg">
         <div className="text-center text-white text-2xl font-bold italix">
-          Bekasi
+          {region}
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full h-auto">
         <AspectRatio ratio={16 / 9}>
           <Image
+            className="object-cover w-full h-full"
             width={384}
             height={300}
             sizes="(max-width: 768px) 100vw, 700px"
-            src="/assets/foto-wulansari.jpg"
-            alt="Seminar SSW Griya Wulansari"
-            className="object-cover w-full h-auto"
+            src={src}
+            alt={alt}
           />
         </AspectRatio>
       </div>
       <CardHeader>
-        <CardTitle className="text-white">Griya Wulansari</CardTitle>
+        <CardTitle className="text-white">{title}</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="flex flex-row gap-3 mb-2">
-          <Image
-            className="my-auto hover:opacity-80"
-            src="icon/icon-time.svg"
-            alt="Seminar Time"
-            width={17}
-            height={17}
-          />
-          <p className="my-auto text-white font-normal tracking-wide">
-            Selasa, 13.00 - 15.00
-          </p>
+          <Clock9 className="w-5 h-5 my-auto text-white" />
+          <p className="my-auto text-white font-normal tracking-wide">{time}</p>
         </div>
         <div className="flex flex-row gap-3 mb-2">
-          <Image
-            className="my-auto hover:opacity-80"
-            src="icon/icon-time.svg"
-            alt="Seminar Time"
-            width={17}
-            height={17}
-          />
+          <CircleDollarSign className="w-5 h-5 my-auto text-white" />
           <p className="my-auto text-white font-normal tracking-wide">
-            IDR 25 K (SNACK BOX)
+            {price}
           </p>
         </div>
       </CardContent>
-      <Link href="">
+      <Link href={bookLink} target="_blank">
         <div className="header bg-white hover:opacity-90 w-full py-4 rounded-b-lg">
           <div className="text-center text-primary text-2xl font-bold italix">
             Book Now
@@ -308,6 +305,8 @@ const CardImpian = () => {
   );
 };
 
+
+
 export const CardBestSeller = () => {
   return (
     <Link href="..." className="flex">
@@ -351,14 +350,14 @@ export const CardProduk: React.FC<ProdukProps> = ({href, src, alt, title, catego
       href={`/produk/${href}`}
       className="bg-card text-card-foreground shadow-xl rounded-lg w-5/6"
     >
-      <div className="lg:w-full w-50">
+      <div className="lg:w-full h-auto w-50">
         <AspectRatio ratio={1 / 1}>
           <Image
             width={384}
             height={300}
             src={src}
             alt={alt}
-            className="rounded-t-lg object-cover"
+            className="rounded-t-lg w-full h-full object-cover relative"
           />
         </AspectRatio>
       </div>

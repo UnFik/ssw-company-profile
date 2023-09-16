@@ -4,6 +4,7 @@ import Image from "next/image";
 import { CardSeminar } from "@/components/ui/Card";
 import Footer from "@/components/ui/Footer";
 import type { Metadata } from "next";
+import SeminarData from "@/data/seminar.json";
 
 export const metadata: Metadata = {
   title: "Seminar | Smart Sinergy World",
@@ -84,21 +85,59 @@ const SeminarPage = () => {
       </div>
       <div className="md:container px-8 py-20">
         <div className="flex flex-wrap justify-center gap-20 gap-y-10 mt-10 md:pe-0 pe-8">
-          <div className="md:w-82 w-72">
-            <CardSeminar />
+          {SeminarData.map((seminar: Seminar) => (
+            <div className="md:w-82 w-72" key={seminar.id}>
+              <CardSeminar
+                src={seminar.img}
+                alt={seminar.name}
+                title={seminar.name}
+                time={seminar.time}
+                region={seminar.region}
+                price={seminar.price}
+                bookLink={`https://wa.me/628111033358?text=Halo%2C%20Saya%20Ingin%20Mendaftar%20Seminar%20di%20${seminar.name}.`}
+              />
+            </div>
+          ))}
+          {/* <div className="md:w-82 w-72">
+            <CardSeminar
+              src="/assets/foto-wulansari.jpg"
+              alt="Seminar SSW Griya Wulansari"
+              title="Griya Wulansari"
+              time="Selasa, 12.00 - 15.00"
+              region="bekasi"
+              price="HTM 25K (Snack Box)"
+            />
           </div>
           <div className="md:w-82 w-72">
-            <CardSeminar />
+            <CardSeminar
+              src="/assets/foto-wulansari.jpg"
+              alt="Seminar SSW Griya Wulansari"
+              title="Griya Wulansari"
+              time="Selasa, 12.00 - 15.00"
+              region="bekasi"
+              price="HTM 25K (Snack Box)"
+            />
           </div>
           <div className="md:w-82 w-72">
-            <CardSeminar />
+            <CardSeminar
+              src="/assets/foto-wulansari.jpg"
+              alt="Seminar SSW Griya Wulansari"
+              title="Griya Wulansari"
+              time="Selasa, 12.00 - 15.00"
+              region="bekasi"
+              price="HTM 25K (Snack Box)"
+            />
           </div>
           <div className="md:w-82 w-72">
-            <CardSeminar />
-          </div>
-          <div className="md:w-82 w-72">
-            <CardSeminar />
-          </div>
+            <CardSeminar
+              src="/assets/foto-wulansari.jpg"
+              alt="Seminar SSW Griya Wulansari"
+              title="Griya Wulansari"
+              time="Selasa, 12.00 - 15.00"
+              region="bekasi"
+              price="HTM 25K (Snack Box)"
+            />
+          </div> */}
         </div>
         <div className="flex flex-col mt-10">
           <div className="header bg-primary w-full py-4">

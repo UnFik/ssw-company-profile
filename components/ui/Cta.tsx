@@ -20,7 +20,7 @@ const Cta = () => {
             Ayo join kemitraan SSW sekarang!
           </p>
         </div>
-        <Link className="my-auto" href="">
+        <Link className="my-auto" href="/formulir">
           <Button variant="secondary" className="px-12 py-6 w-full">
             Join Mitra
           </Button>
@@ -57,8 +57,14 @@ export const CtaContact = () => {
           </p>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-white text-base font-semibold tracking-wide">Hubungi kami di</p>
-          <Link className="my-auto flex gap-3" href="">
+          <p className="text-white text-base font-semibold tracking-wide">
+            Hubungi kami di
+          </p>
+          <Link
+            className="my-auto flex gap-3"
+            target="_blank"
+            href="https://wa.me/628111033358?text=Halo%2C%20Saya%20Ingin%20Bertanya%20lebih%20lanjut%20mengenai%20kemitraan%20di%20SSW"
+          >
             <Image
               className="my-auto"
               src="icon/icon-wa.svg"

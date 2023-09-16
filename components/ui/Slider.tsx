@@ -92,11 +92,9 @@ export const TestiSlider = () => {
           <TestiCard
             src="/assets/Econax.png"
             alt="Seminar SSW Griya Wulansari"
-            title="Eco - Naxx"
+            title="Eco - Naxx "
             desc="Kesehatan"
-            content="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar nunc a ex gravida, id imperdiet massa congue. Nunc eu neque scelerisque, blandit metus eget, condimentum mauris. Integer elementum eleifend nisi, non tincidunt nunc gravida vel. Curabitur aliquet sem turpis, ut rutrum mi semper in. Maecenas erat arcu, maximus vitae. "
           />
         </div>
         <div>

@@ -30,14 +30,30 @@ Checkbox.displayName = CheckboxPrimitive.Root.displayName;
 interface Props {
   category: string;
   quantity: number;
+  checked?: boolean;
+  onChange?: (isChecked: boolean) => void;
 }
 
-export const CheckboxWithText: React.FC<Props> = ({ category, quantity }) => {
+export const CheckboxWithText: React.FC<Props> = ({
+  category,
+  quantity,
+  checked,
+  onChange,
+}) => {
   const id = React.useId();
-  
+
+  const handleCheckboxChange = () => {
+    if (onChange) {
+      onChange(!checked); // Toggle the checked state and call the onChange callback
+    }
+  };
   return (
     <div className="items-top flex space-x-7">
-      <Checkbox id={id} />
+      <Checkbox
+        id={id}
+        checked={checked}
+        onCheckedChange={handleCheckboxChange}
+      />
       <div className="justify-between w-9/12 flex gap-2 leading-none">
         <label
           htmlFor={id}

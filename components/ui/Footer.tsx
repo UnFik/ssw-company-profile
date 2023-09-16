@@ -35,13 +35,22 @@ const Footer = () => {
             <div className="text-2xl text-white font-bold mt-5 mb-3">
               Link Terkait
             </div>
-            <Link href="tentang-kami" className="subtitle text-white hover:text-gray-200">
+            <Link
+              href="tentang-kami"
+              className="subtitle text-white hover:text-gray-200"
+            >
               Tentang Kami
             </Link>
-            <Link href="privasi" className="subtitle text-white hover:text-gray-200">
+            <Link
+              href="privasi"
+              className="subtitle text-white hover:text-gray-200"
+            >
               Kebijakan Privasi
             </Link>
-            <Link href="ketentuan" className="subtitle text-white hover:text-gray-200">
+            <Link
+              href="ketentuan"
+              className="subtitle text-white hover:text-gray-200"
+            >
               Ketentuan Pengguna
             </Link>
           </div>
@@ -57,7 +66,11 @@ const Footer = () => {
                 width={21}
                 height={29}
               />
-              <Link href="" className="subtitle text-white hover:text-gray-200">
+              <Link
+                href="https://www.google.com/maps/place/SSW+DISTRIBUTOR+PT+BEST/@-6.3020277,106.9334831,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6993d606c162f5:0xff170069f28aa873!8m2!3d-6.302033!4d106.936058!16s%2Fg%2F11rb343_p8?entry=ttu"
+                target="_blank"
+                className="subtitle text-white hover:text-gray-200"
+              >
                 Premier Estate 2 Blok H6, Jatiwarna, Pondok Melati, Bekasi, Jawa
                 Barat 17415
               </Link>
@@ -76,7 +89,8 @@ const Footer = () => {
                 height={32}
               />
               <Link
-                href=""
+                href="https://wa.me/6285157713826?text=Halo%2C%20Saya%20Ingin%20Bertanya%20lebih%20lanjut%20mengenai%20kemitraan%20di%20SSW"
+                target="_blank"
                 className="my-auto subtitle text-white hover:text-gray-200"
               >
                 +62 811 1033 358
@@ -103,7 +117,10 @@ const Footer = () => {
               Follow us at
             </div>
             <div className="flex gap-7">
-              <Link href="">
+              <Link
+                href="https://www.youtube.com/@smartsinergyworldofficial308"
+                target="_blank"
+              >
                 <div className="my-auto  hover:opacity-80">
                   <Image
                     src="/icon/icon-youtube.svg"
@@ -113,7 +130,10 @@ const Footer = () => {
                   />
                 </div>
               </Link>
-              <Link href="">
+              <Link
+                href="https://www.facebook.com/smartsinergyworld"
+                target="_blank"
+              >
                 <div className="my-auto hover:opacity-80">
                   <Image
                     src="/icon/icon-facebook.svg"
@@ -123,7 +143,7 @@ const Footer = () => {
                   />
                 </div>
               </Link>
-              <Link href="">
+              <Link href="https://www.instagram.com/smartsinergyworld" target="_blank">
                 <div className="my-auto hover:opacity-80">
                   <Image
                     src="/icon/icon-ig.svg"
