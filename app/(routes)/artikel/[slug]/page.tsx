@@ -66,7 +66,6 @@ export default function ArtikelDetail({ params }: any) {
             width={650}
             height={650}
           />
-
           <MDXRemote source={props.content} />
         </article>
         <div className="md:px-60 px-2 py-10">
