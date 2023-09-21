@@ -5,8 +5,18 @@ import SearchBar from "@/components/ui/SearchBar";
 import { CheckboxWithText } from "@/components/ui/checkbox";
 import { CardBestSeller, CardProduk } from "@/components/ui/Card";
 import { useState, useCallback, useMemo, useEffect } from "react";
-import TabsButton from "@/components/ui/Swiper";
 import produkData from "@/data/produk.json";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { buttonVariants } from "@/components/ui/Button";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+// import required modules
+import { FreeMode, Pagination } from "swiper/modules";
+import CheckboxButton from "@/components/ui/CheckboxButton";
 
 
 const ProdukPage = () => {
@@ -80,7 +90,23 @@ const ProdukPage = () => {
     <div>
       <NavbarGeneral />
       <div className="lg:hidden flex mb-7">
-        <TabsButton />
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={10}
+          freeMode={true}
+          modules={[FreeMode, Pagination]}
+          className="mySwiper"
+        >
+          {availableCategories.map((category: string, index: number) => (
+            <SwiperSlide key={index}>
+              <CheckboxButton
+                category={category}
+                checked={selectedCategories.includes(category)}
+                onChange={() => handleCategoryChange(category)}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <div className="pl-4 pe-3 lg:pl-32 md:pr-24">
         <div className="flex flex-row lg:mt-10 gap-5">
@@ -122,7 +148,8 @@ const ProdukPage = () => {
             {filteredProducts.map((product: Product, index: number) => (
               <div key={index}>
                 <CardProduk
-                  src={`/assets/produk/${product.title}.webp`}
+                  // {ecomaxx-&-econaxx.webp?updatedAt=1695267701439}
+                  src={`https://ik.imagekit.io/8gkon2t3f/product/${product.title.toLowerCase()}.webp`}
                   alt={`${product.title} Product Image`}
                   href={`/${product.title.toLowerCase()}`}
                   title={product.title}

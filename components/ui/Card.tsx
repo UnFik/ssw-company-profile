@@ -116,7 +116,7 @@ export const TestiCard: React.FC<TestiProps> = ({
         </div>
       </CardHeader>
       <CardContent>
-        <p className="w-full text-sm font-normal text-center tracking-wide mt-3">
+        <p className="w-full text-xs font-normal text-center tracking-wide">
           {content}
         </p>
       </CardContent>
@@ -358,6 +358,7 @@ export const CardProduk: React.FC<ProdukProps> = ({href, src, alt, title, catego
             src={src}
             alt={alt}
             className="rounded-t-lg w-full h-full object-cover relative"
+            priority
           />
         </AspectRatio>
       </div>

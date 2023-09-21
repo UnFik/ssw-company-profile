@@ -35,7 +35,7 @@ export default function Home() {
               17.000 mitra yang tersebar di seluruh Indonesia bahkan
               mancanegara.
             </h3>
-            <Link href="/formulir">
+            <Link href="/formulir" className="md:mx-0 mx-auto">
               <Button className="w-48 py-6 md:mx-0 mx-auto">Join Mitra</Button>
             </Link>
           </div>
@@ -401,7 +401,6 @@ export default function Home() {
         </div>
       </div>
       <Footer />
-      
     </>
   );
 }

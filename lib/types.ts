@@ -35,4 +35,3 @@ interface Seminar {
   time: string;
   price: string;
 };
-

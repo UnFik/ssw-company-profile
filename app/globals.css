@@ -122,4 +122,24 @@
   select::-webkit-scrollbar {
     display: none;
   }
+
+  input[type="checkbox"]:not(:checked),
+  input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  input[type="checkbox"] + label {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 10px;
+    @apply text-primary;
+  }
+
+  input[type="checkbox"]:checked + label {
+    color: white;
+    @apply bg-primary;
+  }
 }

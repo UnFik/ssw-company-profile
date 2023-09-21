@@ -33,6 +33,7 @@ const ProdukDetailPage = () => {
                 alt={`${product.title} Product Image`}
                 width={200}
                 height={200}
+                priority
               />
             </AspectRatio>
             <Button className="mt-5 w-full h-14 text-xl space-x-3">
@@ -120,7 +121,7 @@ const ProdukDetailPage = () => {
           </div>
         </div>
         <h2 className="text-3xl text-center mt-20 font-semibold">
-          Tentang Eco Racing
+          Tentang {product.title}
         </h2>
       </div>
       <div className="mt-10"></div>

@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AspectRatio } from "./Aspect-ratio";
 import placeholder from "../../public/assets/169.png";
+import testiData from "@/data/testimoni.json"
 import { buttonVariants } from "./Button";
 
 interface ArrowProps {
@@ -55,6 +56,8 @@ export const TestiSlider = () => {
     slidesToScroll: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1280,
@@ -88,6 +91,17 @@ export const TestiSlider = () => {
   return (
     <div>
       <Slider {...settings}>
+        {testiData.map((testimoni: Testimoni, index: number) => (
+          <div key={index}>
+          <TestiCard
+            src="/assets/Econax.png"
+            alt={testimoni.nama}
+            title={testimoni.nama}
+            desc={testimoni.profesi}
+            content={testimoni.testimoni}
+          />
+        </div>
+        ))}
         <div>
           <TestiCard
             src="/assets/Econax.png"

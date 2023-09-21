@@ -27,7 +27,7 @@ function ArtikelPage() {
   });
   return (
     <>
-      <main className="flex flex-col md:px-28 px-4 mt-7">
+      <main className="flex flex-col md:px-56 px-4 mt-7">
         <h1 className="text-3xl font-bold">Artikel Smart Sinergy World</h1>
 
         <section className="py-10">
