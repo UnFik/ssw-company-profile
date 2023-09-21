@@ -35,3 +35,9 @@ interface Seminar {
   time: string;
   price: string;
 };
+
+interface Testimoni {
+  nama: string;
+  profesi: string;
+  testimoni: string;
+};

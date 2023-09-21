@@ -9,7 +9,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { AspectRatio } from "./Aspect-ratio";
 import placeholder from "../../public/assets/169.png";
 import testiData from "@/data/testimoni.json"
-import { buttonVariants } from "./Button";
 
 interface ArrowProps {
   className?: string;
