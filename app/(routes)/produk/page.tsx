@@ -1,5 +1,9 @@
 "use client";
 
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
 import { NavbarGeneral } from "@/components/ui/Navbar";
 import SearchBar from "@/components/ui/SearchBar";
 import { CheckboxWithText } from "@/components/ui/checkbox";
@@ -7,16 +11,11 @@ import { CardBestSeller, CardProduk } from "@/components/ui/Card";
 import { useState, useCallback, useMemo, useEffect } from "react";
 import produkData from "@/data/produk.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { buttonVariants } from "@/components/ui/Button";
+import { useDebounce } from "use-debounce";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-
-// import required modules
 import { FreeMode, Pagination } from "swiper/modules";
 import CheckboxButton from "@/components/ui/CheckboxButton";
+import Footer from "@/components/ui/Footer";
 
 
 const ProdukPage = () => {
@@ -25,6 +24,8 @@ const ProdukPage = () => {
   const [categoryQuantities, setCategoryQuantities] = useState<
     Record<string, number>
   >({});
+
+  const[debounceValue] = useDebounce(searchQuery, 3000);
 
   useEffect(() => {
     const categoryCounts: Record<string, number> = {};
@@ -39,14 +40,7 @@ const ProdukPage = () => {
     });
 
     setCategoryQuantities(categoryCounts);
-  }, []);
-
-  const handleSearchChange = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
-      setSearchQuery(event.target.value);
-    },
-    [setSearchQuery]
-  );
+  }, [debounceValue]);
 
   const handleCategoryChange = useCallback(
     (category: string) => {
@@ -108,14 +102,14 @@ const ProdukPage = () => {
           ))}
         </Swiper>
       </div>
-      <div className="pl-4 pe-3 lg:pl-32 md:pr-24">
-        <div className="flex flex-row lg:mt-10 gap-5">
-          <div className="lg:flex flex-col w-2/6 gap-10 hidden">
+      <div className="pl-4 pe-3 lg:pl-32 md:pr-24 mb-10">
+        <div className="flex flex-row lg:mt-10 gap-5 items-start">
+          <div className="lg:flex flex-col w-2/6 gap-10 hidden sticky h-full">
             <div className="search flex flex-col gap-3">
               <div className="text-2xl font-medium tracking-wide">
                 Pencarian Produk
               </div>
-              <SearchBar value={searchQuery} onChange={handleSearchChange} />
+              <SearchBar value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
             </div>
             <div className="category flex flex-col gap-3">
               <div className="text-2xl font-medium tracking-wide">Kategori</div>
@@ -152,7 +146,7 @@ const ProdukPage = () => {
                   src={`https://ik.imagekit.io/8gkon2t3f/product/${product.title.toLowerCase()}.webp`}
                   alt={`${product.title} Product Image`}
                   href={`/${product.title.toLowerCase()}`}
-                  title={product.title}
+                  title={product.title.replace(/-/g, " ")}
                   category={product.category}
                   desc={product.desc}
                 />
@@ -161,6 +155,7 @@ const ProdukPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

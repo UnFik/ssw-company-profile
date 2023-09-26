@@ -42,7 +42,7 @@
   },
   {
     "title": "HABSPRO",
-    "category": "Kesehatan",
+    "category": "Suplemen",
     "tagline": "Habbatussauda membantu mengobati semua penyakit",
     "priceRange": {
       "priceMin": 25000,
@@ -105,36 +105,6 @@
       "bpom": "039.OL./Kpts/SR.310/B/01/2020"
     },
     "linkYoutube": ""
-  },
-  {
-    "title": "ECO-VICO",
-    "category": "Suplemen",
-    "tagline": "Minyak Kelapa Murni",
-    "priceRange": {
-      "priceMin": 0,
-      "priceMax": 250000
-    },
-    "desc": "ECO VICO adalah kapsul herbal yang dibuat dari penyulingan minyak kelapa murni yang mengandung asam laurat yang merupakan anti bakteri dan virus. Diproses dengan teknologi canggih dan modern, membuat senyawa esensial di dalamnya tetap utuh sehingga dihasilkan minyak dengan kadar air dan kadar asam lemak bebas yang rendah, warna yang bening, harum, serta memiliki daya simpan lebih dari 12 bulan.",
-    "benefit": [
-      "Menurunkan kolesterol & meningkatkan stamina.",
-      "Melancarkan peredaran darah.",
-      "Mencegah penyakit jantung dan stroke.",
-      "Menangkal bakteri & virus.",
-      "Baik untuk kesehatan kulit dan kesuburan rambut.",
-      "Mencegah pikun dan Alzheimer dan epilepsi.",
-      "Meningkatkan kesehatan tulang dan gigi.",
-      "Meningkatkan kesehatan pencernaan."
-    ],
-    "content": [
-      {
-        "type": "Botol",
-        "info": "1 botol isi 100 kapsul @450 mg"
-      }
-    ],
-    "dose": "Baik diminum 2 x 2 kapsul per hari, diminum 30 menit sebelum makan.",
-    "identity": {
-      "bpom": "BPOM RI TR 203379281"
-    }
   },
   {
     "title": "PILLOW-SLOW-RELEASE",
@@ -255,7 +225,592 @@
       "bpom": "BPOM RI MD 867013043071",
       "halalMUI": "No. SKH0052/SH/LPPOM MUI/IX/2020. \nNo. 816/LPPOM MUI/JTM/S.Ket-Dir/XII/10"
     }
+  },
+  {
+    "title": "LVN-COLLAGENIA",
+    "category": "Minuman Kesehatan",
+    "tagline": "Untuk Cantik dan Awet Muda",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN COLLAGENIA Adalah minuman serbuk rasa Stroberi dengan Kolagen, Glycine, L-Glutathione & Ekstrak tebu memberikan efek antioksidan dan detoksifikasi, merangsang regenerasi sel-sel baru sehingga menjadikan kulit lebih cerah, kenyal, awet muda dan sehat. Diperkaya juga dengan Premix Vitamin, Kalsium, Mineral, ekstrak buah-buahan, dan kaya akan serat alami sebagai nutrisi yang baik untuk tubuh.",
+    "benefit": [
+      "Master antioksidan.",
+      "Menangkal radikal bebas.",
+      "Mengurangi flek hitam.",
+      "Menghaluskan kulit wajah.",
+      "Mencegah keriput dan tanda-tanda penuaan dini lainnya.",
+      "Mengurangi bekas luka pada kulit."
+    ],
+    "content": [
+      {
+        "type": "Box",
+        "info": "1 box isi 10 sachet @20 g"
+      }
+    ],
+    "instruction": "Baik diminum 1 sampai 2 gelas per hari, diminum pada siang hari dan malam hari sebelum tidur.",
+    "identity": {
+      "bpom": "BPOM RI MD 867013273071",
+      "halalMUI": "No. SKH0052/SH/LPPOM MUI/IX/2020"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-XLIM",
+    "category": "Minuman Kesehatan",
+    "tagline": "Langsing Sehat Alami",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN XLIM Minuman serbuk kaya akan serat pangan tinggi, sifatnya menyerap air & memberi rasa kenyang lebih lama. Mengandung Spirulina & Chitosan untuk menangkal kolesterol jahat dan diperkaya dengan Asam Amino pembakar lemak, Antioksidan, Premix Vitamin, Kalsium, Mineral dan ekstrak buah-buahan, yang baik untuk kesehatan.",
+    "benefit": [
+      "Membakar lemak.",
+      "Melancarkan sistem pencernaan tubuh.",
+      "Mengontrol tekanan darah tinggi & kolesterol.",
+      "Menurunkan berat badan & mencegah obesitas."
+    ],
+    "content": [
+      {
+        "type": "Box",
+        "info": "1 box isi 10 sachet @15 g"
+      }
+    ],
+    "instruction": "Baik diminum 1 sampai 2 gelas per hari, diminum malam hari sebagai pengganti makan malam.",
+    "identity": {
+      "bpom": "BPOM RI MD 867013121071",
+      "halalMUI": "No. SKH0052/SH/LPPOM MUI/IX/2020"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-CALSI",
+    "category": "Minuman Kesehatan",
+    "tagline": "Meningkatkan Kecerdasan dan Nafsu Makan",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN CALSI Minuman serbuk kedelai diperkaya dengan Lisin & Temulawak untuk meningkatkan nafsu makan dan daya tahan tubuh anak. Diperkaya Royal Jelly yang mengandung antioksidan dan meningkatkan perkembangan mental serta organ reproduksi. Diperkaya Omega 3, 6, 9 yang sangat baik untuk pertumbuhan dan kecerdasan anak serta mencegah kerusakan otak pada lansia yang menyebabkan pikun.",
+    "benefit": [
+      "Baik untuk perkembangan sel-sel otak.",
+      "Sangat baik untuk pertumbuhan tulang dan gigi.",
+      "Meningkatkan nafsu makan pada anak.",
+      "Sumber protein & lemak nabati.",
+      "Meningkatkan fungsi otak dan perkembangan mental.",
+      "Meningkatkan daya tahan tubuh.",
+      "Pembentukan hormon dan kolagen.",
+      "Melancarkan pencernaan & mencegah sembelit."
+    ],
+    "content": [
+      {
+        "type": "Box",
+        "info": "1 box isi 10 sachet @15 g"
+      }
+    ],
+    "instruction": "Baik diminum 1 sampai 2 gelas per hari, untuk anak-anak minimal berusia 2 tahun.",
+    "identity": {
+      "bpom": "BPOM RI MD 832013267071",
+      "halalMUI": "No. SKH0052/SH/LPPOM MUI/IX/2020"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "ECO-VICO",
+    "category": "Suplemen",
+    "tagline": "Mencegah Penyakit Jantung dan Stroke",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "ECO VICO adalah kapsul herbal yang dibuat dari penyulingan minyak kelapa murni yang mengandung asam laurat yang merupakan anti bakteri dan virus, diproses dengan teknologi canggih dan modern membuat senyawa esensial di dalamnya tetap utuh sehingga dihasilkan minyak dengan kadar air dan kadar asam lemak bebas yang rendah, warna yang bening, harum serta mempunyai daya simpan lebih lama.",
+    "benefit": [
+      "Menurunkan kolesterol & meningkatkan stamina.",
+      "Melancarkan peredaran darah.",
+      "Mencegah penyakit jantung dan stroke.",
+      "Menangkal bakteri & virus.",
+      "Baik untuk kesehatan kulit dan kesuburan rambut.",
+      "Mencegah pikun, alzheimer dan epilepsi.",
+      "Meningkatan kesehatan tulang dan gigi.",
+      "Meningkatkan kesehatan pencernaan."
+    ],
+    "content": [
+      {
+        "type": "Botol",
+        "info": "1 botol isi 100 kapsul @450 mg"
+      }
+    ],
+    "instruction": "Baik diminum 1-2 x 2 kapsul per hari, diminum 30 menit sebelum makan.",
+    "identity": {
+      "bpom": "BPOM RI TR 203379281",
+      "halalMUI": "No. SKH0370/SH/LPPOM MUI/VIII/2021"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "B-MAXX",
+    "category": "Suplemen",
+    "tagline": "Nutrisi Penyeimbang Organ",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "B-MAXX merupakan kapsul herbal penyeimbang nutrisi organ dengan kandungan cabe jawa, merica, gamat emas, purwaceng, dan pasak bumi mampu memberikan efek relaksasi, regenerasi, release, dan refungsi sehingga mampu mengembalikan kinerja organ lebih optimal.",
+    "benefit": [
+      "Menyeimbangkan hormon dan meningkatkan kinerja tubuh.",
+      "Menjaga kesehatan organ reproduksi.",
+      "Membantu tidur yang berkualitas guna mendukung perbaikan sel yang rusak.",
+      "Meningkatkan stamina dan menjaga mood.",
+      "Mengatasi gangguan maag dan nyeri haid.",
+      "Mengobati radang sendi dan mencegah pengeroposan tulang.",
+      "Melancarkan buang air besar dan buang air kecil.",
+      "Meredakan sakit kepala dan nyeri gigi.",
+      "Melegakan pernafasan untuk keluhan sesak nafas.",
+      "Mempertahankan sistem imunitas tubuh."
+    ],
+    "content": [],
+    "instruction": "Baik diminum 3 x 2 kapsul per hari, diminum 30 menit sebelum makan.",
+    "identity": {
+      "bpom": "BPOM RI TR 133373651"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "RED-ONE-BOOST",
+    "category": "Suplemen",
+    "tagline": "Menjaga Stamina Tetap Prima",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "Merupakan herbal alami hasil kombinasi manfaat dan rasa yang unik dari keajaiban alam Indonesia yang mendunia, yaitu minyak buah merah yang mengandung antioksidan sangat tinggi dipadukan dengan madu mentah murni.",
+    "benefit": [
+      "Meningkatkan stamina.",
+      "Menurunkan kadar kolesterol.",
+      "Menangkal radikal bebas.",
+      "Menunda penuaan dini, dan kulit kering.",
+      "Membantu proses penyembuhan penyakit.",
+      "Meningkatkan imunitas.",
+      "Membantu proses penyembuhan penyakit.",
+      "Melindungi kerusakan hati dan ginjal."
+    ],
+    "content": [],
+    "instruction": "Baik diminum 1-2 sendok makan per hari, bisa juga dicampur dengan air dingin 200-300 ml.",
+    "identity": {
+      "bpom": "BPOM RI TR 213607861",
+      "halalMUI": "No. 17130005921011"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-LIP-CREAM-&-LIP-GLOSS",
+    "category": "Kosmetik",
+    "tagline": "Bibir Cantik Indah Alami",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Lip Cream terbuat dari bahan-bahan alami dengan banyak pilihan warna yang terdiri dari 7 varian Lip Matte, sehingga memudahkan kamu menemukan warna favoritmu dan mudah dikreasikan. LVN Lip Gloss memiliki kandungan pelembap yang membantu melembapkan kulit bibir, serta emollient yang mengisi garis-garis di kulit bibir sehingga tampilannya tersamarkan.",
+    "benefit": [
+      "Terlihat natural.",
+      "Tidak mudah luntur.",
+      "Tidak kering di bibir.",
+      "Tidak mudah pecah.",
+      "Mengandung kolagen.",
+      "Teksturnya ringan.",
+      "Tahan lama.",
+      "Bersertifikat halal.",
+      "7 shade Lip Matte.",
+      "1 Lip Gloss."
+    ],
+    "content": [],
+    "instruction": "1 box isi 1 Lip Matte 5 ml. 1 box isi 1 Lip Gloss 4 ml.",
+    "identity": {
+      "halalMUI": "No. 01151250030920"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-SERUM",
+    "category": "Kosmetik",
+    "tagline": "Rahasia Kulit Kencang, Cerah, dan Awet Muda",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Serum diformulasikan spesial dengan kombinasi kandungan Hyaluronic Acid, Vitamin C, Vitamin E dan Kolagen, untuk membantu menutrisi, dan menyamarkan tanda-tanda penuaan dini pada kulit, seperti keriput, kulit kusam dan kering, flek hitam.",
+    "benefit": [
+      "Menjaga kekenyalan dan kekencangan kulit wajah.",
+      "Mencerahkan kulit wajah.",
+      "Mengurangi flek-flek hitam pada wajah.",
+      "Melawan tanda-tanda penuaan dini.",
+      "Meremajakan kulit.",
+      "Memperbaiki warna & tekstur kulit.",
+      "Menjaga kelembapan kulit."
+    ],
+    "content": [],
+    "instruction": "Tuangkan 2-3 pump LVN Serum ke telapak tangan lalu ratakan ke seluruh kulit wajah dengan cara ditepuk-tepuk hingga serum menyerap",
+    "identity": {
+      "bpom": "BPOM NA 18181900593",
+      "halalMUI": "No. 01151250030920"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-DAY-&-NIGHT-CREAM",
+    "category": "Kosmetik",
+    "tagline": "Untuk Kulit Glowing, Sehat, dan Terlindungi 24 Jam",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Day Cream mengandung SPF 25 yang cukup untuk melindungi kulit dari terpaan sinar matahari, LVN Night Cream merupakan krim malam kaya akan bahan aktif, yang mampu menutrisi kulit sampai kulit terdalam.",
+    "benefit": [
+      "Day Cream:",
+      "Mencerahkan kulit wajah secara intensif.",
+      "Melembapkan kulit wajah.",
+      "Melindungi kulit dari sinar matahari langsung.",
+      "Menangkal radikal bebas dari kulit wajah.",
+      "Memudarkan bekas jerawat.",
+      "Night Cream:",
+      "Mencerahkan kulit wajah.",
+      "Mencegah penuaan dini.",
+      "Menangkal radikal bebas dari kulit wajah.",
+      "Meredakan peradangan kulit.",
+      "Mencegah serta menghilangkan jerawat dan bekasnya."
+    ],
+    "content": [],
+    "instruction": "Ambil krim secukupnya dengan ujung jari lalu ratakan ke seluruh wajah dengan cara diusap hingga merata dari sisi luar ke dalam jangan lewatkan bagian leher.",
+    "identity": {
+      "bpom": "BPOM NA 18200101880",
+      "halalMUI": "No. 01151250030920"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-CLEANSING-OIL-&-PEELING-LOTION",
+    "category": "Kosmetik",
+    "tagline": "Membersihkan dan Meremajakan Kulit Sehingga Cerah Bersinar",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Peeling Lotion merupakan soft exfoliator, diformulasikan khusus dengan kombinasi kandungan bentonite, glycolic acid, dan vitamin E, yang kaya akan antioksidan. LVN Skincare Cleansing Oil adalah pembersih wajah berbasis minyak yang memiliki kandungan antioksidan, antiinflamasi, dan vitamin yang baik untuk menutrisi sekaligus membersihkan kulit wajah Anda.",
+    "benefit": [
+      "Mampu menghapus riasan di wajah lebih cepat dan mudah.",
+      "Menghilangkan kulit mati, polutan, dan riasan di wajah.",
+      "Kulit menjadi lebih kenyal dan halus.",
+      "Bisa membersihkan makeup waterproof.",
+      "Dapat mengangkat kelebihan sebum yang diproduksi oleh kelenjar di kulit.",
+      "Membersihkan pori-pori yang tersumbat seperti komedo.",
+      "Mampu mengangkat sel-sel kulit mati.",
+      "Menghaluskan permukaan kulit.",
+      "Menyerap kotoran dan sebum dari permukaan kulit.",
+      "Memperbaiki warna & tekstur kulit wajah.",
+      "Mengurangi flek-flek hitam pada wajah.",
+      "Melawan tanda-tanda penuaan dini.",
+      "Menangkal radikal bebas."
+    ],
+    "content": [],
+    "instruction": "Cleansing Oil: Tuangkan secukupnya ke tangan, pijat lembut ke wajah dengan gerakan melingkar, bilas dengan air hangat. Peeling Lotion: Tuangkan secukupnya pada kapas, usapkan lembut ke wajah setelah membersihkan wajah, hindari area mata dan bibir. Gunakan 2-3 kali seminggu.",
+    "identity": {
+      "bpom": "BPOM NA 18181201236",
+      "halalMUI": "No. 01151250030920"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-HYGIENE-FOR-GENTLE-MAN",
+    "category": "Kosmetik",
+    "tagline": "Berikan Perlindungan dan Melembapkan",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Hygiene For Gentle Man merupakan pembersih daerah intim khusus pria. Menjaga kulit tetap terhidrasi dan membantu melembapkan daerah sekitar area intim pria.",
+    "benefit": [
+      "Membersihkan area intim pria.",
+      "Mencegah bakteri dan jamur.",
+      "Menghilangkan bakteri penyebab bau tak sedap.",
+      "Melembapkan daerah intim pria.",
+      "Memberikan efek sejuk.",
+      "Mengurangi gatal pada area intim pria."
+    ],
+    "content": [],
+    "instruction": "Pump LVN Hygiene For Gentle Man, oleskan sambil dipijat pada bagian intim pria dan area disekitarnya lalu bilas hingga bersih.",
+    "identity": {
+      "bpom": "BPOM NA18221600005"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-HYGIENE-SPRAY-FOR-MAN",
+    "category": "Kosmetik",
+    "tagline": "Berikan Perlindungan dan Melembapkan",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Hygiene Spray For Man merupakan pembersih daerah intim khusus pria. Menjaga kulit tetap terhidrasi dan membantu melembapkan daerah sekitar area intim pria.",
+    "benefit": [
+      "Membersihkan area intim pria.",
+      "Mencegah bakteri dan jamur.",
+      "Menghilangkan bakteri penyebab bau tak sedap.",
+      "Melembapkan daerah intim pria.",
+      "Memberikan efek sejuk.",
+      "Mengurangi gatal pada area intim pria."
+    ],
+    "content": [],
+    "instruction": "Semprotkan LVN Hygiene Spray For Man pada bagian intim pria dan area sekitarnya lalu bilas hingga bersih.",
+    "identity": {
+      "bpom": "BPOM NA18221600032"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-LIP-BALM",
+    "category": "Kosmetik",
+    "tagline": "Melembutkan dan Melembapkan Kulit Bibir",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Lip Balm merupakan perawatan untuk menjaga kesehatan kulit bibir. Diperkaya dengan kandungan Shea Butter (Butyrospermum Parkii Butter) bekerja sebagai emolien yang melembutkan dan melembapkan kulit kering.",
+    "benefit": [
+      "Melembutkan kulit bibir.",
+      "Menghaluskan kulit bibir.",
+      "Melindungi bibir kering dan pecah-pecah.",
+      "Mencerahkan warna bibir.",
+      "Bibir terlihat penuh dan segar."
+    ],
+    "content": [],
+    "instruction": "Oleskan pada bibir yang telah dibersihkan, gunakan pagi dan malam untuk hasil maksimal.",
+    "identity": {
+      "bpom": "BPOM NA18191307232"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-LOOSE-POWDER",
+    "category": "Kosmetik",
+    "tagline": "Rahasia Riasan Tahan Lama",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Loose Powder diformulasikan mampu membantu dan menjadikan riasan wajah menjadi lebih mudah, awet, ringan, serta terlihat lebih menarik.",
+    "benefit": [
+      "Membuat hasil riasan bertahan lebih lama.",
+      "Membuat hasil tampilan wajah lebih natural.",
+      "Mampu menjaga kulit wajah dari minyak berlebih.",
+      "Memperbaiki riasan wajah."
+    ],
+    "content": [],
+    "instruction": "Gunakan LVN Loose Powder secara merata atau bagian tengah wajah (T-zone) pada akhir tahapan skincare.",
+    "identity": {
+      "bpom": "BPOM NA 18210401079"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-ROSE-WATER",
+    "category": "Kosmetik",
+    "tagline": "Menyegarkan dan Merawat Kulit",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Rose Water adalah penyegar kulit wajah, memberikan kesegaran yang turut merevitalisasi kulit sekaligus membantu mengecilkan pori dan menghilangkan kelebihan sebum dan minyak berlebih. Diperkaya dengan Centella Asiatica yang bermanfaat bagi kesehatan kulit.",
+    "benefit": [
+      "Menghidrasi kulit wajah.",
+      "Melembutkan kulit wajah.",
+      "Membersihkan dan mengecilkan pori-pori.",
+      "Mengontrol produksi minyak pada wajah."
+    ],
+    "content": [],
+    "instruction": "Bersihkan wajah lalu semprotkan LVN Rose Water pada wajah Anda.",
+    "identity": {
+      "bpom": "BPOM NA18211209235"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-Serum-Glowing",
+    "category": "Kosmetik",
+    "tagline": "Solusi Kulit Wajah Cerah dan Glowing",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Serum Glowing merupakan serum lembut untuk membantu mencerahkan kulit wajah sekaligus melembabkan kulit wajah. Adanya kandungan Hyaluronic Acid dan Collagen membuat wajah terlihat lebih bersinar, lebih kenyal dan lembap. Kandungan Niacinamide memberikan wajah tampak lebih cerah dan membantu menyeimbangkan kandungan sebum pada wajah.",
+    "benefit": [
+      "Menjaga kekenyalan dan kekencangan kulit wajah.",
+      "Mencerahkan kulit wajah.",
+      "Mengurangi flek-flek hitam pada wajah.",
+      "Melawan tanda-tanda penuaan dini.",
+      "Meremajakan kulit.",
+      "Memperbaiki warna & tekstur kulit.",
+      "Menjaga kelembapan kulit."
+    ],
+    "content": [],
+    "instruction": "Tuangkan 2-3 pump LVN Serum Glowing ke telapak tangan lalu ratakan ke seluruh kulit wajah dengan cara ditepuk-tepuk hingga serum menyerap.",
+    "identity": {
+      "bpom": "BPOM NA 18181900593"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-Face-&-Body-Serum",
+    "category": "Kosmetik",
+    "tagline": "Solusi Kulit Cerah dan Cantik",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Face & Body Serum adalah lotion yang diperkaya dengan tambahan konsentrat serum di dalamnya. Pelembap dalam lotion ini berfungsi untuk menjaga kulit agar tetap terhidrasi sempurna dari bahaya luar (sinar matahari, debu, dan lainnya).",
+    "benefit": [
+      "Menghidrasi dan melembapkan kulit.",
+      "Membantu menangkal radikal bebas.",
+      "Membantu mencegah tanda-tanda penuaan dini.",
+      "Membantu mencegah kerusakan kulit.",
+      "Membantu melindungi dari resiko kanker kulit."
+    ],
+    "content": [],
+    "instruction": "Tuangkan LVN Face & Body Serum ke kulit lalu ratakan ke seluruh bagian kulit tepat setelah mandi.",
+    "identity": {
+      "bpom": "BPOM NA 18220100897, BPOM NA 18220100896, BPOM NA 18210112287",
+      "halalMUI": "No. 01151250030920"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-Face-&-Body-Soap",
+    "category": "Sabun",
+    "tagline": "1 Solusi untuk Badan, Wajah, dan Kulit Kepala",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "Sabun dengan kandungan Madu yang sangat baik untuk menjaga kelembapan kulit dan mengangkat sel-sel kulit mati. Dilengkapi juga dengan Glutathione yang berguna untuk membantu menangkal radikal bebas penyebab kerusakan kulit. Sabun dengan kandungan Collagen sangat baik untuk membantu mengurangi tanda penuaan dini seperti keriput dan garis-garis halus pada kulit. Dilengkapi juga dengan Glutathione yang berguna untuk membantu menangkal radikal bebas penyebab kerusakan kulit. Sabun dengan kandungan Propolis memiliki efek antiseptik ampuh untuk meredakan radang jerawat atau iritasi kulit dan meregenerasi lapisan kulit yang rusak akibat jerawat. Dilengkapi juga dengan Glutathione yang berguna untuk membantu menangkal radikal bebas penyebab kerusakan kulit.",
+    "benefit": [],
+    "content": [],
+    "instruction": "1 box berisi 1 sabun 100 g.",
+    "identity": {
+      "bpom": "BPOM NA 18200500071, BPOM NA 18200500073, BPOM NA 18200500072",
+      "halalMUI": ""
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-Crystal-V-&-LVN-Crystal-Q",
+    "category": "Sabun",
+    "tagline": "Solusi Masalah Wanita yang Paling Dicari",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Crystal-V & LVN Crystal-Q merupakan perawatan organ intim wanita penting dilakukan untuk menjaga organ kewanitaan tetap sehat. Tak hanya itu, organ intim yang selalu terawat dengan baik juga dapat mencegah munculnya berbagai masalah kesehatan di area tersebut.",
+    "benefit": [
+      "Membantu membersihkan organ kewanitaan.",
+      "Mengurangi bau tidak sedap di area miss V.",
+      "Menjaga kondisi flora normal daerah kewanitaan.",
+      "Memberikan nutrisi vitamin pada kulit miss V.",
+      "Mencegah keputihan.",
+      "Mengurangi gatal pada daerah miss V."
+    ],
+    "content": [],
+    "instruction": "1. Larutkan dengan air lalu digunakan sebagai air untuk cebok/membasuh kemaluan.\n2. Basahi dengan air bersih, kemudian dimasukkan ke dalam organ kewanitaan hingga kedalaman 3-4 cm, diputar-putar sekitar 10 detik ke kanan atau ke kiri, kemudian dikeluarkan secara pelan-pelan.",
+    "identity": {
+      "bpom": "BPOM NA 18210500633, BPOM NA 18211600028",
+      "halalMUI": "No. 01151250030920"
+    },
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "ECO-DIESEL",
+    "category": "Otomotif",
+    "tagline": "Aditif Bahan Bakar Terbaik Dunia",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "Eco Diesel adalah aditif bahan bakar untuk membantu mengoptimalkan pembakaran, formula awalnya berbentuk cairan namun dikristalkan (dipadatkan) sehingga memudahkan proses distribusi. Eco Diesel cocok untuk mesin Diesel lama maupun terbaru dengan dosis yang sesuai, mampu meningkatkan kualitas bahan bakar.",
+    "benefit": [
+      "Membersihkan dan merawat mesin.",
+      "Menyempurnakan pembakaran.",
+      "Menghilangkan knocking.",
+      "Meningkatkan akselerasi dan tenaga.",
+      "Mengurangi emisi gas buang."
+    ],
+    "content": [],
+    "instruction": "Masukkan pil/tablet ke dalam tangki kendaraan Anda sesuai dosis.\n\nBox & botol : 1 pil untuk 40 - 70 liter bio solar.\nBlister : 1 tablet untuk 8 - 10 liter bio solar.",
+    "identity": {},
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "ECO-RACING-NANO-TECH",
+    "category": "Otomotif",
+    "tagline": "Aditif Bahan Bakar Terbaik Dunia",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "Eco Racing Nano Oil adalah produk aditif oli mesin, sebuah penemuan baru dengan teknologi nano yang bisa mengubah molekul oli standar menjadi molekul kecil berukuran nano (+- 1/10.000 micron) sehingga dapat memberikan pelumasan yang lebih baik.",
+    "benefit": [
+      "Melindungi mesin dari aus.",
+      "Memulihkan tenaga mesin.",
+      "Menambah usia pakai oli mesin.",
+      "Membersihkan kerak mesin.",
+      "Menghemat biaya perawatan rutin.",
+      "Melindungi komponen mesin dari air & korosi."
+    ],
+    "content": [],
+    "instruction": "Masukkan Nano Oil kedalam tangki oli mesin kendaraan Anda sesuai dosis setiap mengganti oli mesin.\n\n1. 1/2 Botol 25 ml Nano Oil untuk 2 liter oli mesin.\n2. 1 Botol 50 ml Nano Oil untuk 4 liter oli mesin.",
+    "identity": {},
+    "linkShopee": "",
+    "linkYoutube": ""
+  },
+  {
+    "title": "LVN-Hand-Moist-Spray",
+    "category": "Sabun",
+    "tagline": "Sanitizer untuk menjaga sanitasi kita",
+    "priceRange": {
+      "priceMin": 0,
+      "priceMax": 0
+    },
+    "desc": "LVN Hand Moist adalah produk pembersih kuman dan bakteri di tangan yang mudah dibawa kemana saja sekaligus mempunyai manfaat untuk melembutkan dan merawat kulit tangan yang kering karena mengandung extract aloe vera dan minyak avocado yang sangat baik untuk kulit.",
+    "benefit": [
+      "Membunuh bakteri & virus.",
+      "Membersihkan tangan.",
+      "Melembutkan dan menyejukkan kulit.",
+      "Melembabkan kulit."
+    ],
+    "content": [],
+    "instruction": "Gunakan di telapak tangan dan ratakan ke seluruh bagian tangan Anda.",
+    "identity": {},
+    "linkShopee": "",
+    "linkYoutube": "",
+    "linkLazada": ""
   }
-
-
 ]

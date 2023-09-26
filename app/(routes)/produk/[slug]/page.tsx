@@ -15,7 +15,7 @@ const ProdukDetailPage = () => {
   const slug = pathname.split("/").filter((segment) => segment)[1];
   const product = produkData.find((p) => p.title.toLocaleLowerCase() === slug);
 
-  console.log(product?.category);
+  // console.log(product?.category);
   if (!product) {
     return <div>Product not found</div>;
   }
@@ -28,9 +28,9 @@ const ProdukDetailPage = () => {
             <AspectRatio ratio={1 / 1}>
               <Image
                 className="w-full h-full mx-auto object-cover relative"
-                src={`/assets/produk/${product.title}.webp`}
+                src={`https://ik.imagekit.io/8gkon2t3f/product/${product.title.toLowerCase()}.webp`}
                 sizes="(max-width: 768px) 100vw, 700px"
-                alt={`${product.title} Product Image`}
+                alt={`${product.title.replace(/-/g, " ")} Product Image`}
                 width={200}
                 height={200}
                 priority
@@ -51,7 +51,7 @@ const ProdukDetailPage = () => {
             </Button>
           </div>
           <div className="w-full">
-            <h1 className="title">{product.title}</h1>
+            <h1 className="title">{product.title.replace(/-/g, " ")}</h1>
             <h2 className="subtitle">{product.tagline}</h2>
             <div className="text-2xl mt-5">
               Rp {product.priceRange.priceMin} - Rp{" "}
@@ -63,7 +63,9 @@ const ProdukDetailPage = () => {
         <div className="flex flex-row pt-10 flex-wrap justify-around w-full gap-y-10">
           <div className="flex flex-col gap-y-10 me-auto">
             <div className="space-y-2">
-              <h2 className="text-2xl font-semibold">Manfaat Eco Racing</h2>
+              <h2 className="text-2xl font-semibold">
+                Manfaat {product.title.replace(/-/g, " ")}
+              </h2>
               <ol className="list-decimal ms-4 space-y-1">
                 {product.benefit.map((benefit, index) => (
                   <li key={index}>{benefit}</li>
@@ -104,19 +106,17 @@ const ProdukDetailPage = () => {
                 </ol>
               </div>
             ) : (
-              <>
-                <div className="space-y-2">
-                  <h2 className="text-xl font-semibold">
-                    {product.identity.bpom}
-                  </h2>
-                  <h2 className="text-xl font-semibold">
-                    {product.identity.halalMUI}
-                  </h2>
-                  <h2 className="text-xl font-semibold">
-                    {product.identity.izinEdar}
-                  </h2>
-                </div>
-              </>
+              <div className="space-y-2">
+                <h2 className="text-xl font-semibold">
+                  {product.identity.bpom}
+                </h2>
+                <h2 className="text-xl font-semibold">
+                  {product.identity.halalMUI}
+                </h2>
+                <h2 className="text-xl font-semibold">
+                  {product.identity.izinEdar}
+                </h2>
+              </div>
             )}
           </div>
         </div>

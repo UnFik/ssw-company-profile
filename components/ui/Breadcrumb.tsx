@@ -19,13 +19,13 @@ const Breadcrumb = () => {
           {segments.map((segment, index) => (
             <React.Fragment key={index}>
               <DoubleArrowRightIcon
-                width={50}
-                height={25}
+                width={30}
+                height={15}
                 className="text-white"
               />
               <Link href={`/${segments.slice(0, index + 1).join("/")}`}>
                 <div className="text-white font-semibold text-xs md:text-base hover:text-gray-200">
-                  {segment}
+                  {segment.replace(/-/g, " ")}
                 </div>
               </Link>
             </React.Fragment>
