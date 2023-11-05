@@ -25,7 +25,7 @@ const Breadcrumb = () => {
               />
               <Link href={`/${segments.slice(0, index + 1).join("/")}`}>
                 <div className="text-white font-semibold text-xs md:text-base hover:text-gray-200">
-                  {segment.replace(/-/g, " ")}
+                  {segment.replace(/-|%20/g, " ")}
                 </div>
               </Link>
             </React.Fragment>

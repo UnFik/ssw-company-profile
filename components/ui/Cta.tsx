@@ -63,7 +63,7 @@ export const CtaContact = () => {
           <Link
             className="my-auto flex gap-3"
             target="_blank"
-            href="https://wa.me/628111033358?text=Halo%2C%20Saya%20Ingin%20Bertanya%20lebih%20lanjut%20mengenai%20kemitraan%20di%20SSW"
+            href="https://wa.me/6282114038541?text=Halo%2C%20Saya%20Ingin%20Bertanya%20lebih%20lanjut%20mengenai%20kemitraan%20di%20SSW"
           >
             <Image
               className="my-auto"
@@ -73,13 +73,13 @@ export const CtaContact = () => {
               height={22}
             />
             <p className="text-white text-base font-semibold tracking-wide">
-              +62 8111 1033 358
+              +62 821 1403 8541
             </p>
           </Link>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Cta;

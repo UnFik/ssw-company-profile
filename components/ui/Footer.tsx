@@ -89,11 +89,11 @@ const Footer = () => {
                 height={32}
               />
               <Link
-                href="https://wa.me/6285157713826?text=Halo%2C%20Saya%20Ingin%20Bertanya%20lebih%20lanjut%20mengenai%20kemitraan%20di%20SSW"
+                href="https://wa.me/6282114038541?text=Halo%2C%20Saya%20Ingin%20Bertanya%20lebih%20lanjut%20mengenai%20kemitraan%20di%20SSW"
                 target="_blank"
                 className="my-auto subtitle text-white hover:text-gray-200"
               >
-                +62 811 1033 358
+                +62 821 1403 8541
               </Link>
             </div>
             <div className="flex gap-4">
@@ -108,7 +108,7 @@ const Footer = () => {
                 href=""
                 className="my-auto subtitle text-white hover:text-gray-200"
               >
-                +62 811 1033 358
+                +62 821 1403 8541
               </Link>
             </div>
           </div>

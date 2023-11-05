@@ -33,8 +33,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useRouter } from "next/navigation";
 
 const FormPdf = () => {
+  const router = useRouter();
   const form = useForm<FormValues>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -61,6 +63,7 @@ const FormPdf = () => {
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     generatePDF(data);
+    router.push(`https://wa.me/6282114038541?text=Halo%2C%20Saya%20Ingin%20Mendaftar%20Kemitraan.%0A%0ANama%3A%20${data.nama}%0ANo.%20HP%3A%20${data.noHp}%0APaket%20Kemitraan%3A%20${data.paket}%0A%0ATerima%20Kasih`)
   }
 
   //   const generatePdf = (e: React.MouseEvent<HTMLButtonElement>) => {};

@@ -55,7 +55,7 @@ export default function Home() {
           </div>
           <div className="box bg-primary md:w-[15.9rem] w-24 h-36 align-bottom flex flex-col justify-center text-center">
             <h2 className="lg:text-7xl md:text-4xl text-xl font-bold">
-              17.000
+              20.000
             </h2>
             <h4 className="md:text-sm text-xs font-semibold">
               Mitra di Seluruh Indonesia
@@ -213,7 +213,7 @@ export default function Home() {
           </h3>
           <div className="mt-5 card-section grid lg:grid-cols-4 grid-cols-1 gap-7 justify-center lg:gap-1 w-full">
             <Link
-              href=""
+              href={`${process.env.DOMAIN}/produk/eco-farming`}
               className="border bg-card text-card-foreground shadow-xl mx-auto rounded-lg w-5/6"
             >
               <div className="lg:w-full w-50">
@@ -221,15 +221,46 @@ export default function Home() {
                   <Image
                     width={384}
                     height={300}
-                    src="/assets/Econax.png"
-                    alt="Seminar SSW Griya Wulansari"
+                    src="https://ik.imagekit.io/8gkon2t3f/product/eco-farming.webp"
+                    alt="Eco Farming"
                     className="rounded-t-lg object-cover"
                   />
                 </AspectRatio>
               </div>
               <CardHeader>
-                <CardTitle>Eco - Naxx</CardTitle>
-                <CardDescription>Kesehatan</CardDescription>
+                <CardTitle>Eco Farming</CardTitle>
+                <CardDescription>Pupuk</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="w-full text-sm font-normal tracking-wide line-clamp-3">
+                  Eco Farming Original adalah pupuk organik super aktif yang
+                  mengandung 13 unsur hara dengan memanfaatkan teknologi mikroba
+                  (bakteri decomposer) sebagai bioaktivator untuk merestorasi
+                  kesuburan tanah. Penggunaan Pupuk Eco Farming Original mampu
+                  menekan penggunaan pupuk anorganik yang berlebih, sehingga
+                  dapat menjadi alternatif pengembangan produksi pertanian sehat
+                  dan ramah lingkungan.
+                </p>
+              </CardContent>
+            </Link>
+            <Link
+              href={`${process.env.DOMAIN}/produk/ecomaxx-&-econaxx`}
+              className="border bg-card text-card-foreground shadow-xl mx-auto rounded-lg w-5/6"
+            >
+              <div className="lg:w-full w-50">
+                <AspectRatio ratio={1 / 1}>
+                  <Image
+                    width={384}
+                    height={300}
+                    src="https://ik.imagekit.io/8gkon2t3f/product/ecomaxx-&-econaxx.webp"
+                    alt="ECOMAXX & ECONAXX"
+                    className="rounded-t-lg object-cover"
+                  />
+                </AspectRatio>
+              </div>
+              <CardHeader>
+                <CardTitle>ECONAXX</CardTitle>
+                <CardDescription>Minuman Kesehatan</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="w-full text-sm font-normal tracking-wide line-clamp-3">
@@ -240,7 +271,7 @@ export default function Home() {
               </CardContent>
             </Link>
             <Link
-              href=""
+              href={`${process.env.DOMAIN}/produk/habspro`}
               className="border bg-card text-card-foreground shadow-xl mx-auto rounded-lg w-5/6"
             >
               <div className="lg:w-full w-50">
@@ -248,26 +279,27 @@ export default function Home() {
                   <Image
                     width={384}
                     height={300}
-                    src="/assets/Econax.png"
-                    alt="Seminar SSW Griya Wulansari"
+                    src="https://ik.imagekit.io/8gkon2t3f/product/habspro.webp"
+                    alt="HABSPRO"
                     className="rounded-t-lg object-cover"
                   />
                 </AspectRatio>
               </div>
               <CardHeader>
-                <CardTitle>Eco - Naxx</CardTitle>
-                <CardDescription>Kesehatan</CardDescription>
+                <CardTitle>HABSPRO</CardTitle>
+                <CardDescription>Suplemen</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="w-full text-sm font-normal tracking-wide line-clamp-3">
-                  Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng)
-                  untuk meningkatkan stamina, hormon, kesuburan, keperkasaan &
-                  kesehatan pria maupun wanita.
+                  HABSPRO adalah suplemen herbal berbentuk kapsul yang memiliki
+                  kandungan utama Habbatussauda Bee Polen dan Propolis.
+                  Kombinasi bahan-bahan tersebut mampu meningkatkan stamina dan
+                  memberikan banyak manfaat untuk tubuh.
                 </p>
               </CardContent>
             </Link>
             <Link
-              href=""
+              href={`${process.env.DOMAIN}/produk/b-maxx`}
               className="border bg-card text-card-foreground shadow-xl mx-auto rounded-lg w-5/6"
             >
               <div className="lg:w-full w-50">
@@ -275,48 +307,23 @@ export default function Home() {
                   <Image
                     width={384}
                     height={300}
-                    src="/assets/Econax.png"
-                    alt="Seminar SSW Griya Wulansari"
+                    src="https://ik.imagekit.io/8gkon2t3f/product/b-maxx.webp"
+                    alt="B MAXX"
                     className="rounded-t-lg object-cover"
                   />
                 </AspectRatio>
               </div>
               <CardHeader>
-                <CardTitle>Eco - Naxx</CardTitle>
-                <CardDescription>Kesehatan</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="w-full text-sm font-normal tracking-wide line-clamp-3">
-                  Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng)
-                  untuk meningkatkan stamina, hormon, kesuburan, keperkasaan &
-                  kesehatan pria maupun wanita.
-                </p>
-              </CardContent>
-            </Link>
-            <Link
-              href=""
-              className="border bg-card text-card-foreground shadow-xl mx-auto rounded-lg w-5/6"
-            >
-              <div className="lg:w-full w-50">
-                <AspectRatio ratio={1 / 1}>
-                  <Image
-                    width={384}
-                    height={300}
-                    src="/assets/Econax.png"
-                    alt="Seminar SSW Griya Wulansari"
-                    className="rounded-t-lg object-cover"
-                  />
-                </AspectRatio>
-              </div>
-              <CardHeader>
-                <CardTitle>Eco - Naxx</CardTitle>
-                <CardDescription>Kesehatan</CardDescription>
+                <CardTitle>B MAXX</CardTitle>
+                <CardDescription>Suplemen</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="w-full text-xs font-normal tracking-wide line-clamp-3">
-                  Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng)
-                  untuk meningkatkan stamina, hormon, kesuburan, keperkasaan &
-                  kesehatan pria maupun wanita.
+                  B-MAXX merupakan kapsul herbal penyeimbang nutrisi organ
+                  dengan kandungan cabe jawa, merica, gamat emas, purwaceng, dan
+                  pasak bumi mampu memberikan efek relaksasi, regenerasi,
+                  release, dan refungsi sehingga mampu mengembalikan kinerja
+                  organ lebih optimal.
                 </p>
               </CardContent>
             </Link>
@@ -338,31 +345,63 @@ export default function Home() {
       </div>
       <div className="md:container px-2 mb-20">
         <div className="flex flex-col gap-10">
-          <h1 className="title md:mt-24 mt-10 text-primary">FAQ</h1>
+          <h1 className="title md:mt-24 mt-10 text-primary">
+            FAQ{" "}
+            <span className="subtitle  font-semibold italic">
+              Frequently Asked Question
+            </span>
+          </h1>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionTrigger>
+                Apa itu Smart Sinergy World (SSW)?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Smart Sinergy World (SSW) adalah sebuah komunitas di bawah
+                naungan PT BEST yang berfokus pada penjualan langsung berjenjang
+                syariah (PLBS). SSW menawarkan peluang bisnis yang dapat diikuti
+                oleh berbagai latar belakang, dengan fokus pada semangat
+                bersaudara, solusi, dan kesuksesan bersama.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Is it styled?</AccordionTrigger>
+              <AccordionTrigger>
+                Bagaimana cara bergabung dengan Smart Sinergy World?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It comes with default styles that matches the other
-                components&apos; aesthetic.
+                Anda dapat bergabung dengan SSW dengan mengisi formulir pada
+                bagian Join Mitra atau menghubungi kami melalui kontak Whatsapp
+                yang tertera.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Is it animated?</AccordionTrigger>
+              <AccordionTrigger>
+                Apakah saya perlu pengalaman sebelum bergabung?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It comes with a default animation that is enabled when the
+                Tidak, Anda tidak perlu pengalaman sebelum bergabung. SSW
+                menawarkan pelatihan dan dukungan untuk mitranya, termasuk bagi
+                mereka yang baru memulai.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Is it animated?</AccordionTrigger>
+              <AccordionTrigger>
+                Bagaimana dukungan dan pelatihan disediakan kepada mitra?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It comes with a default animation that is enabled when the
+                SSW menyediakan beragam sumber daya pendidikan dan dukungan
+                kepada mitra, termasuk pelatihan online dan offline, webinar,
+                dan seminar.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>
+                Bisakah saya menjalankan bisnis SSW paruh waktu?
+              </AccordionTrigger>
+              <AccordionContent>
+                Ya, banyak anggota SSW menjalankan bisnis ini paruh waktu sesuai
+                dengan jadwal mereka. Namun, hasilnya bisa bervariasi tergantung
+                pada seberapa banyak waktu dan upaya yang Anda investasikan.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
