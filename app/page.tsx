@@ -23,7 +23,7 @@ import Footer from "@/components/ui/Footer";
 export default function Home() {
   return (
     <>
-      <div className="relative bg-[url('/assets/header.png')] bg-center bg-no-repeat md:bg-fixed bg-cover">
+      <div className="relative bg-[url('/assets/header.svg')] bg-center bg-no-repeat md:bg-fixed bg-cover">
         <Navbar />
         <div className="lg:px-20 flex justify-center items-center">
           <div className="flex flex-col gap-5 w-9/12 mx-auto text-left text-white">
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-full w-full bg-[url('/assets/about.png')] bg-center bg-no-repeat md:bg-fixed bg-cover flex justify-center items-center">
+      <div className="h-full w-full bg-[url('/assets/about.svg')] bg-center bg-no-repeat md:bg-fixed bg-cover flex justify-center items-center">
         <div className="md:container px-2">
           <div className="flex flex-col gap-7 mx-auto text-white">
             <h1 className="title text-center tracking-tight leading-normal">
