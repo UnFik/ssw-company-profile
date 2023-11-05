@@ -353,7 +353,7 @@ export default function Home() {
           </h1>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 Apa itu Smart Sinergy World (SSW)?
               </AccordionTrigger>
               <AccordionContent>
@@ -365,7 +365,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 Bagaimana cara bergabung dengan Smart Sinergy World?
               </AccordionTrigger>
               <AccordionContent>
@@ -375,7 +375,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 Apakah saya perlu pengalaman sebelum bergabung?
               </AccordionTrigger>
               <AccordionContent>
@@ -385,7 +385,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 Bagaimana dukungan dan pelatihan disediakan kepada mitra?
               </AccordionTrigger>
               <AccordionContent>
@@ -395,7 +395,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 Bisakah saya menjalankan bisnis SSW paruh waktu?
               </AccordionTrigger>
               <AccordionContent>
