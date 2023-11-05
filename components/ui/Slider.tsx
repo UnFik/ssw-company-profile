@@ -7,8 +7,14 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AspectRatio } from "./Aspect-ratio";
-import placeholder from "../../public/assets/169.png";
-import testiData from "@/data/testimoni.json"
+
+import banners from "@/public/assets/banner/banner.svg";
+import seminarcso from "@/public/assets/banner/seminar-banner.svg";
+import pkSeminar from "@/public/assets/banner/pk-banner.svg";
+import onlineSeminar from "@/public/assets/banner/seminaronline-banner.svg";
+import bdpSeminar from "@/public/assets/banner/bdp-banner.svg";
+
+import testiData from "@/data/testimoni.json";
 
 interface ArrowProps {
   className?: string;
@@ -92,14 +98,14 @@ export const TestiSlider = () => {
       <Slider {...settings}>
         {testiData.map((testimoni: Testimoni, index: number) => (
           <div key={index}>
-          <TestiCard
-            src="/assets/Econax.png"
-            alt={testimoni.nama}
-            title={testimoni.nama}
-            desc={testimoni.profesi}
-            content={testimoni.testimoni}
-          />
-        </div>
+            <TestiCard
+              src="/assets/Econax.png"
+              alt={testimoni.nama}
+              title={testimoni.nama}
+              desc={testimoni.profesi}
+              content={testimoni.testimoni}
+            />
+          </div>
         ))}
         <div>
           <TestiCard
@@ -434,7 +440,7 @@ export const GaleriSlider = () => {
         <div className="w-full">
           <AspectRatio ratio={12 / 5} className="relative h-8/12">
             <Image
-              src={placeholder}
+              src={`https://ik.imagekit.io/8gkon2t3f/banner/seminar-banner.svg`}
               fill
               alt="Image"
               sizes="(max-width: 768px) 100vw, 700px"
@@ -443,19 +449,56 @@ export const GaleriSlider = () => {
           </AspectRatio>
         </div>
         <div>
-          <h3>2</h3>
+          <div className="w-full">
+            <AspectRatio ratio={12 / 5} className="relative h-8/12">
+              <Image
+                src={`https://ik.imagekit.io/8gkon2t3f/banner/banner.svg`}
+                fill
+                alt="Image"
+                sizes="(max-width: 768px) 100vw, 700px"
+                className="rounded-md object-cover"
+              />
+            </AspectRatio>
+          </div>
         </div>
         <div>
-          <h3>3</h3>
+          <div className="w-full">
+            <AspectRatio ratio={12 / 5} className="relative h-8/12">
+              <Image
+                src={`https://ik.imagekit.io/8gkon2t3f/banner/pk-banner.svg`}
+                fill
+                alt="Image"
+                sizes="(max-width: 768px) 100vw, 700px"
+                className="rounded-md object-cover"
+              />
+            </AspectRatio>
+          </div>
         </div>
         <div>
-          <h3>4</h3>
+          <div className="w-full">
+            <AspectRatio ratio={12 / 5} className="relative h-8/12">
+              <Image
+                src={`https://ik.imagekit.io/8gkon2t3f/banner/seminaronline-banner.svg`}
+                fill
+                alt="Image"
+                sizes="(max-width: 768px) 100vw, 700px"
+                className="rounded-md object-cover"
+              />
+            </AspectRatio>
+          </div>
         </div>
         <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
+          <div className="w-full">
+            <AspectRatio ratio={12 / 5} className="relative h-8/12">
+              <Image
+                src={`https://ik.imagekit.io/8gkon2t3f/banner/bdp-banner.svg`}
+                fill
+                alt="Image"
+                sizes="(max-width: 768px) 100vw, 700px"
+                className="rounded-md object-cover"
+              />
+            </AspectRatio>
+          </div>
         </div>
       </Slider>
     </div>

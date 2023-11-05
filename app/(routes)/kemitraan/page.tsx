@@ -1,3 +1,4 @@
+
 import { NavbarGeneral } from "@/components/ui/Navbar";
 import React from "react";
 import { GaleriSlider, ProfitSlider } from "@/components/ui/Slider";
