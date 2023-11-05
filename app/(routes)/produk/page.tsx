@@ -17,7 +17,6 @@ import { FreeMode, Pagination } from "swiper/modules";
 import CheckboxButton from "@/components/ui/CheckboxButton";
 import Footer from "@/components/ui/Footer";
 
-
 const ProdukPage = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -25,13 +24,12 @@ const ProdukPage = () => {
     Record<string, number>
   >({});
 
-  const[debounceValue] = useDebounce(searchQuery, 3000);
+  const [debounceValue] = useDebounce(searchQuery, 3000);
 
   useEffect(() => {
     const categoryCounts: Record<string, number> = {};
 
     produkData.forEach((product) => {
-
       if (!categoryCounts[product.category]) {
         categoryCounts[product.category] = 1;
       } else {
@@ -109,7 +107,10 @@ const ProdukPage = () => {
               <div className="text-2xl font-medium tracking-wide">
                 Pencarian Produk
               </div>
-              <SearchBar value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+              <SearchBar
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
             </div>
             <div className="category flex flex-col gap-3">
               <div className="text-2xl font-medium tracking-wide">Kategori</div>
@@ -130,10 +131,27 @@ const ProdukPage = () => {
                 Best Seller
               </div>
               <div className="flex flex-col gap-5 w-96">
-                <CardBestSeller />
-                <CardBestSeller />
-                <CardBestSeller />
-                <CardBestSeller />
+                <CardBestSeller
+                  href={`${process.env.DOMAIN}/produk/eco-farming`}
+                  src="https://ik.imagekit.io/8gkon2t3f/product/eco-farming.webp"
+                  alt="Eco Farming"
+                  title="Eco Farming"
+                  desc="Eco Farming Original adalah pupuk organik super aktif yang mengandung 13 unsur hara dengan memanfaatkan teknologi mikroba (bakteri decomposer) sebagai bioaktivator untuk merestorasi kesuburan tanah. Penggunaan Pupuk Eco Farming Original mampu menekan penggunaan pupuk anorganik yang berlebih, sehingga dapat menjadi alternatif pengembangan produksi pertanian sehat dan ramah lingkungan."
+                />
+                <CardBestSeller
+                  href={`${process.env.DOMAIN}/produk/ecomaxx-&-econaxx`}
+                  src="https://ik.imagekit.io/8gkon2t3f/product/ecomaxx-&-econaxx.webp"
+                  alt="ECOMAXX & ECONAXX"
+                  title="ECOMAXX & ECONAXX"
+                  desc="Ecomaxx Coffee & Econaxx Coffee adalah minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria maupun wanita. Ecomaxx Coffee bisa untuk pria dan wanita, sementara Econaxx Coffee dikhususkan untuk pria dewasa."
+                />
+                <CardBestSeller
+                  href={`${process.env.DOMAIN}/produk/habspro`}
+                  src="https://ik.imagekit.io/8gkon2t3f/product/habspro.webp"
+                  alt="HABSPRO"
+                  title="HABSPRO"
+                  desc="HABSPRO adalah suplemen herbal berbentuk kapsul yang memiliki kandungan utama Habbatussauda Bee Polen dan Propolis. Kombinasi bahan-bahan tersebut mampu meningkatkan stamina dan memberikan banyak manfaat untuk tubuh."
+                />
               </div>
             </div>
           </div>

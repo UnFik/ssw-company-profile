@@ -762,7 +762,22 @@
       "Meningkatkan akselerasi dan tenaga.",
       "Mengurangi emisi gas buang."
     ],
-    "content": [],
+    "content": [{
+      "type": "Box",
+      "info": "1 box isi 10 pil"
+    },
+    {
+      "type": "Blister",
+      "info": "1 blister isi 50 tablet"
+    },
+    {
+      "type": "Botol Besar",
+      "info": "1 botol besar isi 100 tablet"
+    },
+    {
+      "type": "Botol Kecil",
+      "info": "1 botol kecil isi 30 tablet"
+    }],
     "instruction": "Masukkan pil/tablet ke dalam tangki kendaraan Anda sesuai dosis.\n\nBox & botol : 1 pil untuk 40 - 70 liter bio solar.\nBlister : 1 tablet untuk 8 - 10 liter bio solar.",
     "identity": {},
     "linkShopee": "",
@@ -785,7 +800,12 @@
       "Menghemat biaya perawatan rutin.",
       "Melindungi komponen mesin dari air & korosi."
     ],
-    "content": [],
+    "content": [
+      {
+        "type": "Box",
+        "info": "1 box isi 2 Botol @50ml"
+      }
+    ],
     "instruction": "Masukkan Nano Oil kedalam tangki oli mesin kendaraan Anda sesuai dosis setiap mengganti oli mesin.\n\n1. 1/2 Botol 25 ml Nano Oil untuk 2 liter oli mesin.\n2. 1 Botol 50 ml Nano Oil untuk 4 liter oli mesin.",
     "identity": {},
     "linkShopee": "",

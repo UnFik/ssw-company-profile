@@ -85,7 +85,7 @@ const ProdukDetailPage = () => {
           </div>
           <div className="flex flex-col gap-y-10 me-auto">
             <div className="space-y-2">
-              <h2 className="text-2xl font-semibold">
+              <h2 className="text-2xl font-semibold ">
                 {product.category != "Otomotif"
                   ? "Aturan Konsumsi"
                   : "Petunjuk Penggunaan"}
@@ -121,7 +121,7 @@ const ProdukDetailPage = () => {
           </div>
         </div>
         <h2 className="text-3xl text-center mt-20 font-semibold">
-          Tentang {product.title}
+          Tentang {product.title.replace(/-/g, " ")}
         </h2>
       </div>
       <div className="mt-10"></div>
