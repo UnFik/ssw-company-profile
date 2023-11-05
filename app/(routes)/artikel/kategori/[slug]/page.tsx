@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Smart Sinergy World",
 };
 
-function ArtikelPage() {
+function ArtikelKategoriPage({ params }: any) {
   const blogDir = "blogs";
 
   const files = fs.readdirSync(path.join(blogDir));
@@ -23,6 +23,9 @@ function ArtikelPage() {
       slug: filename.replace(".mdx", ""),
     };
   });
+  const tes = "Islam"
+  const filteredBlogs = blogs.filter((blog) => blog.meta.category === params.slug);
+
   return (
     <>
       <main className="flex flex-col md:px-56 px-4 mt-7">
@@ -32,7 +35,7 @@ function ArtikelPage() {
           <h2 className="text-2xl font-bold">Artikel Terbaru</h2>
 
           <div className="py-5 grid md:grid-cols-3 grid-cols-1 gap-5 gap-y-10">
-            {blogs.map((blog) => (
+            {filteredBlogs.map((blog) => (
               <CardBlog
                 key={blog.slug}
                 href={"/artikel/" + blog.slug}
@@ -51,4 +54,4 @@ function ArtikelPage() {
   );
 }
 
-export default ArtikelPage;
+export default ArtikelKategoriPage;

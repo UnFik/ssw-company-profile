@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AspectRatio } from "./Aspect-ratio";
 import { Clock9, CircleDollarSign } from "lucide-react";
+import { CalendarDays, User } from "lucide-react";
 
 interface cardImpianProps {}
 
@@ -224,7 +225,15 @@ interface CardSeminarProps {
   bookLink: string;
 }
 
-export const CardSeminar: React.FC<CardSeminarProps> = ({src, alt, title, time, price, region, bookLink}) => {
+export const CardSeminar: React.FC<CardSeminarProps> = ({
+  src,
+  alt,
+  title,
+  time,
+  price,
+  region,
+  bookLink,
+}) => {
   return (
     <Card className="bg-primary shadow-xl mx-auto w-80">
       <div className="header bg-primary w-full py-4 rounded-t-lg">
@@ -259,7 +268,7 @@ export const CardSeminar: React.FC<CardSeminarProps> = ({src, alt, title, time, 
           </p>
         </div>
       </CardContent>
-      <Link href={bookLink} target="_blank">
+      <Link href={bookLink}>
         <div className="header bg-white hover:opacity-90 w-full py-4 rounded-b-lg">
           <div className="text-center text-primary text-2xl font-bold italix">
             Book Now
@@ -305,29 +314,33 @@ const CardImpian = () => {
   );
 };
 
+interface BestSellerProps {
+  href: string;
+  src: string;
+  alt: string;
+  title: string;
+  desc: string;
+}
 
-
-export const CardBestSeller = () => {
+export const CardBestSeller: React.FC<BestSellerProps> = ({
+  href,
+  src,
+  alt,
+  title,
+  desc,
+}) => {
   return (
-    <Link href="..." className="flex">
-      <div className="lg:w-full w-50">
-        <AspectRatio ratio={1 / 1}>
-          <Image
-            width={284}
-            height={200}
-            src="/assets/Econax.png"
-            alt="Seminar SSW Griya Wulansari"
-            className="object-cover"
-          />
+    <Link href={href} className="grid grid-cols-3">
+      <div className="lg:w-full h-full w-50 col-span-1">
+        <AspectRatio ratio={2 / 2}>
+          <Image width={404} height={200} src={src} alt={alt} className="" />
         </AspectRatio>
       </div>
-      <div className="flex flex-col items-start justify-center h-full">
-        <CardContent className="flex flex-col gap-3">
-          <CardTitle>Eco - Naxx</CardTitle>
+      <div className="flex flex-col items-start justify-center h-full col-span-2">
+        <CardContent className="flex flex-col gap-3 w-full">
+          <CardTitle className="font-bold">{title}</CardTitle>
           <p className="w-full text-sm font-normal tracking-wide line-clamp-3">
-            Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-            meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan
-            pria maupun wanita.
+            {desc}
           </p>
         </CardContent>
       </div>
@@ -344,7 +357,14 @@ interface ProdukProps {
   desc: string;
 }
 
-export const CardProduk: React.FC<ProdukProps> = ({href, src, alt, title, category, desc}) => {
+export const CardProduk: React.FC<ProdukProps> = ({
+  href,
+  src,
+  alt,
+  title,
+  category,
+  desc,
+}) => {
   return (
     <Link
       href={`/produk/${href}`}
@@ -380,6 +400,7 @@ interface CardBlogProps {
   category: string;
   title: string;
   date: string;
+  author: string;
 }
 
 export const CardBlog: React.FC<CardBlogProps> = ({
@@ -389,6 +410,7 @@ export const CardBlog: React.FC<CardBlogProps> = ({
   category,
   title,
   date,
+  author,
 }) => {
   return (
     <Link href={href} className="border-none rounded-lg w-full">
@@ -402,8 +424,62 @@ export const CardBlog: React.FC<CardBlogProps> = ({
         <h3 className="font-bold text-2xl my-1 line-clamp-2 text-ellipsis">
           {title}
         </h3>
-        <span className="w-full text-base text-gray-500">{date}</span>
+        <div className="flex flex-row items-start justify-start">
+          <div className="flex flex-row w-1/2">
+            <CalendarDays className="w-5 h-5 text-gray-500 my-auto me-2" />
+            <div className="text-xs text-gray-500 my-auto">{date}</div>
+          </div>
+          <div className="flex flex-row"></div>
+          <User className="w-5 h-5 text-gray-500 my-auto me-2" />
+          <div className="text-xs text-gray-500 my-auto">{author}</div>
+        </div>
       </div>
+    </Link>
+  );
+};
+
+interface CardRekomendasiProps {
+  href: string;
+  src: string;
+  alt: string;
+  date: string;
+  title: string;
+  desc: string;
+}
+
+export const CardRekomendasi: React.FC<CardRekomendasiProps> = ({
+  href,
+  src,
+  alt,
+  date,
+  title,
+  desc,
+}) => {
+  return (
+    <Link
+      href={href}
+      className="border bg-card text-card-foreground shadow-xl mx-auto rounded-lg"
+    >
+      <div className="lg:w-full w-50">
+        <AspectRatio ratio={5 / 3}>
+          <Image
+            width={384}
+            height={300}
+            src={src}
+            alt={alt}
+            className="rounded-t-lg object-cover"
+          />
+        </AspectRatio>
+      </div>
+      <CardHeader>
+        <CardDescription>{date}</CardDescription>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p className="w-full text-sm font-normal tracking-wide line-clamp-3 text-ellipsis">
+          {desc}
+        </p>
+      </CardContent>
     </Link>
   );
 };

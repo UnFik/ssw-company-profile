@@ -9,7 +9,7 @@ import {
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
-import Nav from "./Nav";
+import Nav, { NavBlog } from "./Nav";
 import Image from "next/image";
 import Breadcrumb from "./Breadcrumb";
 
@@ -59,7 +59,7 @@ export const NavbarBlog = () => {
       </div>
       <div className="bg-black text-white py-3">
         <div className="md:px-56 px-4">
-          <Nav />
+          <NavBlog />
         </div>
       </div>
     </div>

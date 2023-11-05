@@ -54,6 +54,8 @@ const NavLinks = () => {
   );
 };
 
+
+
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
@@ -87,6 +89,26 @@ const NavLinksBlog = () => {
           BERANDA
         </NavigationMenuLink>
       </Link>
+      <Link href="/artikel/kategori/Islam" className="w-full" legacyBehavior passHref>
+        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          ISLAM
+        </NavigationMenuLink>
+      </Link>
+      <Link href="/artikel/kategori/Bisnis" className="w-full" legacyBehavior passHref>
+        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          BISNIS
+        </NavigationMenuLink>
+      </Link>
+      <Link href="/artikel/kategori/Lifestyle" className="w-full" legacyBehavior passHref>
+        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          LIFESTYLE
+        </NavigationMenuLink>
+      </Link>
+      <Link href="/artikel/kategori/News" className="w-full" legacyBehavior passHref>
+        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          NEWS
+        </NavigationMenuLink>
+      </Link>
     </NavigationMenu>
   );
 };
@@ -101,7 +123,7 @@ export const NavBlog = () => {
     <>
       <nav className="flex">
         <div className="lg:flex hidden justify-between">
-          <NavLinks />
+          <NavLinksBlog />
         </div>
         <div className="lg:hidden">
           <button onClick={toggleNavbar}>{isOpen ? <X /> : <Menu />}</button>
@@ -109,7 +131,7 @@ export const NavBlog = () => {
       </nav>
       {isOpen && (
         <div className="flex basis-full flex-col items-center">
-          <NavLinks />
+          <NavLinksBlog />
         </div>
       )}
     </>
