@@ -46,20 +46,8 @@
     "is_active": 1,
     "time": "Jumat, 15.00 - 18.00",
     "price": "HTM, 25K (Lunch Box)"
-  },
-  {
-    "id": 5,
-    "name": "GRIYA ALAM",
-    "lat": -6.554718804805128,
-    "long": 106.86193904772273,
-    "img": "/assets/seminar/wulansari.jpg",
-    "region": "Bogor",
-    "address": "Perumahan Griya Alam Kav 1, Babakan Madang, Sentul City, Bogor",
-    "is_active": 1,
-    "time": "",
-    "price":"HTM, 35K (Lunch Box)"
   },{
-    "id": 6,
+    "id": 5,
     "name": "RM Sunda Cibiuk",
     "lat": -6.105448233483051,
     "long": 106.14757710793113,

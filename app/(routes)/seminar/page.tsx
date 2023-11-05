@@ -94,7 +94,7 @@ const SeminarPage = () => {
                 time={seminar.time}
                 region={seminar.region}
                 price={seminar.price}
-                bookLink={`https://wa.me/628111033358?text=Halo%2C%20Saya%20Ingin%20Mendaftar%20Seminar%20di%20${seminar.name}.`}
+                bookLink={`/seminar/${seminar.name}`}
               />
             </div>
           ))}
