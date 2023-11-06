@@ -91,6 +91,10 @@
     @apply h-full w-full relative;
   }
 
+  a{
+    font-weight: bold!important
+  }
+
   .title {
     @apply font-bold md:text-6xl text-4xl;
   }

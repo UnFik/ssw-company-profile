@@ -20,6 +20,8 @@ import {
 } from "@/components/ui/Accordion";
 import Footer from "@/components/ui/Footer";
 
+
+
 export default function Home() {
   return (
     <>
@@ -196,7 +198,7 @@ export default function Home() {
               Sukses <span className="text-primary">Bersama</span>.
             </h1>
             <Link href="tentang-kami" className="mx-auto">
-              <Button className="w-48 py-7 text-xl">About Us</Button>
+              <Button className="w-48 py-7 text-xl font-bold">About Us</Button>
             </Link>
           </div>
         </div>
@@ -353,7 +355,7 @@ export default function Home() {
           </h1>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger className="text-start">
+              <AccordionTrigger className="text-start font-bold">
                 Apa itu Smart Sinergy World (SSW)?
               </AccordionTrigger>
               <AccordionContent>
@@ -365,7 +367,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger className="text-start">
+              <AccordionTrigger className="text-start font-bold">
                 Bagaimana cara bergabung dengan Smart Sinergy World?
               </AccordionTrigger>
               <AccordionContent>
@@ -375,7 +377,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger className="text-start">
+              <AccordionTrigger className="text-start font-bold">
                 Apakah saya perlu pengalaman sebelum bergabung?
               </AccordionTrigger>
               <AccordionContent>
@@ -385,7 +387,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger className="text-start">
+              <AccordionTrigger className="text-start font-bold">
                 Bagaimana dukungan dan pelatihan disediakan kepada mitra?
               </AccordionTrigger>
               <AccordionContent>
@@ -395,7 +397,7 @@ export default function Home() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger className="text-start">
+              <AccordionTrigger className="text-start font-bold">
                 Bisakah saya menjalankan bisnis SSW paruh waktu?
               </AccordionTrigger>
               <AccordionContent>

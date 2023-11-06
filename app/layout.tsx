@@ -1,13 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
-const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ['400', '500', '600', '700', '800']
+  style: ["normal", "italic"],
+  weight: ["500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -22,10 +22,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="G1aDbgQxUyEvhpG5cvKPk8WkYOVM4jd7wRaq5tcmaCU"
+        />
+      </head>
+      <body className={poppins.className}>
         <NextTopLoader color="#C5A32B" />
         <ScrollToTop />
-
         {children}
       </body>
     </html>
