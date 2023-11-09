@@ -1,14 +1,26 @@
 [
   {
-    "nama": "Natiya",
-    "profesi": "TKI",
-    "image": "",
-    "testimoni": "Saya bangga berada di Team SSW ini. Saya jadi Tambah Ilmu, tambah saudara, tambah pemasukan. Dan bisa membantu sesama. SSW TEAM IS THE BEST."
-  },
-  {
     "nama": "Virginia Sandra Paat",
     "profesi": "Guru",
-    "image": "",
+    "image": "https://ik.imagekit.io/8gkon2t3f/testimoni/virginia.jpg",
     "testimoni": "Selama bergabung di Komunitas Smart Sinergy World saya senang sekali, karena banyak ilmu dan pengetahuan yang saya dapat di acara Seminar dan mengikuti training2 yang diadakan, baik offline maupun online. Founder dan co founder memberi kesempatan kepada anggotanya untuk tampil mempraktekan kemampuan masing2. Di SSW juga terasa kekeluargaannya."
+  },
+  {
+    "nama": "Nova andrian",
+    "profesi": "Driver online",
+    "image": "https://ik.imagekit.io/8gkon2t3f/testimoni/nova.jpg",
+    "testimoni": "Alhamdulillah memiliki founder yang sangat luar biasa the best "
+  },
+  {
+    "nama": "Nining Tri Kurniasih",
+    "profesi": "Guru",
+    "image": "https://ik.imagekit.io/8gkon2t3f/testimoni/nining.jpg",
+    "testimoni": "9 November 2022 bergabung.... Genap 1 tahun..... Semangat persaudaraan nya yang saya suka...... Produk herbalnya membantu  untuk stamina keluarga....Eco Racingnya membantu irit BBM"
+  },
+  {
+    "nama": "Arimuhari",
+    "profesi": "Harian Lepas",
+    "image": "https://ik.imagekit.io/8gkon2t3f/testimoni/arimuhari.jpg",
+    "testimoni": "Selama bergabung dalam komunitas smart sinergy world memudahkan saya jadi reseler prodak pertanian banyak membantu para petani hemat pupuk kimia dan beralih ke pertanian organik"
   }
 ]

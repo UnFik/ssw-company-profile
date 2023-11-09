@@ -24,7 +24,7 @@ const Footer = () => {
               href="/formulir"
               className={`${buttonVariants({
                 variant: "secondary",
-              })} w-48 py-7 my-auto`}
+              })} w-48 py-7 my-auto font-bold`}
             >
               Join Mitra
             </Link>

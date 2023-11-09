@@ -38,6 +38,7 @@ interface Seminar {
 
 interface Testimoni {
   nama: string;
+  image: string;
   profesi: string;
   testimoni: string;
 };

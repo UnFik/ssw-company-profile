@@ -99,7 +99,7 @@ export const TestiSlider = () => {
         {testiData.map((testimoni: Testimoni, index: number) => (
           <div key={index}>
             <TestiCard
-              src="/assets/Econax.png"
+              src={testimoni.image}
               alt={testimoni.nama}
               title={testimoni.nama}
               desc={testimoni.profesi}
@@ -107,92 +107,6 @@ export const TestiSlider = () => {
             />
           </div>
         ))}
-        <div>
-          <TestiCard
-            src="/assets/Econax.png"
-            alt="Seminar SSW Griya Wulansari"
-            title="Eco - Naxx "
-            desc="Kesehatan"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar nunc a ex gravida, id imperdiet massa congue. Nunc eu neque scelerisque, blandit metus eget, condimentum mauris. Integer elementum eleifend nisi, non tincidunt nunc gravida vel. Curabitur aliquet sem turpis, ut rutrum mi semper in. Maecenas erat arcu, maximus vitae. "
-          />
-        </div>
-        <div>
-          <TestiCard
-            src="/assets/Econax.png"
-            alt="Seminar SSW Griya Wulansari"
-            title="Eco - Naxx"
-            desc="Kesehatan"
-            content="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-          />
-        </div>
-        <div>
-          <TestiCard
-            src="/assets/Econax.png"
-            alt="Seminar SSW Griya Wulansari"
-            title="Eco - Naxx"
-            desc="Kesehatan"
-            content="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-          />
-        </div>
-        <div>
-          <TestiCard
-            src="/assets/Econax.png"
-            alt="Seminar SSW Griya Wulansari"
-            title="Eco - Naxx"
-            desc="Kesehatan"
-            content="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-          />
-        </div>
-        <div>
-          <TestiCard
-            src="/assets/Econax.png"
-            alt="Seminar SSW Griya Wulansari"
-            title="Eco - Naxx"
-            desc="Kesehatan"
-            content="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-          />
-        </div>
-        <div>
-          <TestiCard
-            src="/assets/Econax.png"
-            alt="Seminar SSW Griya Wulansari"
-            title="Eco - Naxx"
-            desc="Kesehatan"
-            content="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-          />
-        </div>
-        <div>
-          <TestiCard
-            src="/assets/Econax.png"
-            alt="Seminar SSW Griya Wulansari"
-            title="Eco - Naxx"
-            desc="Kesehatan"
-            content="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-          />
-        </div>
-        <div>
-          <TestiCard
-            src="/assets/Econax.png"
-            alt="Seminar SSW Griya Wulansari"
-            title="Eco - Naxx"
-            desc="Kesehatan"
-            content="Minuman serbuk kopi dengan MTG (Maca, Tribulus & Ginseng) untuk
-          meningkatkan stamina, hormon, kesuburan, keperkasaan & kesehatan pria
-          maupun wanita."
-          />
-        </div>
       </Slider>
     </div>
   );
@@ -366,52 +280,6 @@ export const ProfitSlider = () => {
             </div>
           </div>
         </div>
-        <div className="lg:h-72">
-          <div className="w-full grid grid-cols-3 justify-items-center items-center gap-5">
-            <Image
-              className="lg:col-span-1 col-span-3"
-              src="/icon/profit/illustration-profit5.svg"
-              alt="Selling Illustration"
-              sizes="(max-width: 768px) 100vw, 700px"
-              width={300}
-              height={300}
-            />
-            <div className="lg:col-span-2 col-span-3 flex gap-3 flex-col mb-9 mx-auto">
-              <h5 className="text-primary font-bold text-base text-center">
-                Royalti Prestasi (Ambassador Rank)
-              </h5>
-              <p className="text-center text-xs md:w-7/12 w-full mx-auto font-semibold">
-                Royalti tambahan yang diberikan kepada mitra yang telah meraih
-                jenjang prestasi, Bonus dihitung dari setiap pembelanjaan
-                downline dijalur generasinya yang telah mencapai pembelanjaan 2
-                juta. Royalti berlaku tanpa batasan generasi.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="lg:h-72">
-          <div className="w-full grid grid-cols-3 justify-items-center items-center gap-5">
-            <Image
-              className="lg:col-span-1 col-span-3"
-              src="/icon/profit/illustration-profit4.svg"
-              alt="Selling Illustration"
-              sizes="(max-width: 768px) 100vw, 700px"
-              width={300}
-              height={300}
-            />
-            <div className="lg:col-span-2 col-span-3 flex gap-3 flex-col mb-9 mx-auto">
-              <h5 className="text-primary font-bold text-base text-center">
-                Royalti Kepemin (Ambassador Rank)
-              </h5>
-              <p className="text-center text-xs md:w-7/12 w-full mx-auto font-semibold">
-                Royalti tambahan yang diberikan kepada mitra yang telah meraih
-                jenjang prestasi, Bonus dihitung dari setiap pembelanjaan
-                downline dijalur generasinya yang telah mencapai pembelanjaan 2
-                juta. Royalti berlaku tanpa batasan generasi.
-              </p>
-            </div>
-          </div>
-        </div>
       </Slider>
     </div>
   );
@@ -421,9 +289,12 @@ export const GaleriSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 2500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    lazyload: true,
     responsive: [
       {
         breakpoint: 1280,
@@ -444,7 +315,7 @@ export const GaleriSlider = () => {
               fill
               alt="Image"
               sizes="(max-width: 768px) 100vw, 700px"
-              className="rounded-md object-cover"
+              className="object-cover"
             />
           </AspectRatio>
         </div>
@@ -456,7 +327,7 @@ export const GaleriSlider = () => {
                 fill
                 alt="Image"
                 sizes="(max-width: 768px) 100vw, 700px"
-                className="rounded-md object-cover"
+                className="object-cover"
               />
             </AspectRatio>
           </div>
@@ -469,7 +340,7 @@ export const GaleriSlider = () => {
                 fill
                 alt="Image"
                 sizes="(max-width: 768px) 100vw, 700px"
-                className="rounded-md object-cover"
+                className="object-cover"
               />
             </AspectRatio>
           </div>
@@ -482,7 +353,7 @@ export const GaleriSlider = () => {
                 fill
                 alt="Image"
                 sizes="(max-width: 768px) 100vw, 700px"
-                className="rounded-md object-cover"
+                className="object-cover"
               />
             </AspectRatio>
           </div>
@@ -495,7 +366,7 @@ export const GaleriSlider = () => {
                 fill
                 alt="Image"
                 sizes="(max-width: 768px) 100vw, 700px"
-                className="rounded-md object-cover"
+                className="object-cover"
               />
             </AspectRatio>
           </div>

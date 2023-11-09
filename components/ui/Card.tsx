@@ -107,7 +107,7 @@ export const TestiCard: React.FC<TestiProps> = ({
           height={62}
           src={src}
           alt={alt}
-          className="rounded-full object-cover h-auto w-auto"
+          className="rounded-full object-cover"
         />
         <div className="w-full flex flex-col justify-center gap-2 my-auto">
           <CardTitle className="text-sm md:text-lg text-primary text-ellipsis">

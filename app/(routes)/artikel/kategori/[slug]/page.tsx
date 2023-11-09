@@ -23,7 +23,6 @@ function ArtikelKategoriPage({ params }: any) {
       slug: filename.replace(".mdx", ""),
     };
   });
-  const tes = "Islam"
   const filteredBlogs = blogs.filter((blog) => blog.meta.category === params.slug);
 
   return (
