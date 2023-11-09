@@ -163,7 +163,7 @@ const ProdukPage = () => {
                   // {ecomaxx-&-econaxx.webp?updatedAt=1695267701439}
                   src={`https://ik.imagekit.io/8gkon2t3f/product/${product.title.toLowerCase()}.webp`}
                   alt={`${product.title} Product Image`}
-                  href={`/${product.title.toLowerCase()}`}
+                  href={`${product.title.toLowerCase()}`}
                   title={product.title.replace(/-/g, " ")}
                   category={product.category}
                   desc={product.desc}
