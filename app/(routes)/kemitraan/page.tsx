@@ -208,7 +208,7 @@ const page = () => {
               title="priority"
               hak="31"
               produk="434"
-              keuntungan="37.2"
+              keuntungan="37"
               reward="51.7"
               harga="77.500.000"
             />

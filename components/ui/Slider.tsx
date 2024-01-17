@@ -315,7 +315,7 @@ export const GaleriSlider = () => {
               fill
               alt="Image"
               sizes="(max-width: 768px) 100vw, 700px"
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </AspectRatio>
         </div>
@@ -327,7 +327,7 @@ export const GaleriSlider = () => {
                 fill
                 alt="Image"
                 sizes="(max-width: 768px) 100vw, 700px"
-                className="object-cover"
+                className="object-cover rounded-md"
               />
             </AspectRatio>
           </div>
@@ -340,7 +340,7 @@ export const GaleriSlider = () => {
                 fill
                 alt="Image"
                 sizes="(max-width: 768px) 100vw, 700px"
-                className="object-cover"
+                className="object-cover rounded-md"
               />
             </AspectRatio>
           </div>
@@ -353,7 +353,7 @@ export const GaleriSlider = () => {
                 fill
                 alt="Image"
                 sizes="(max-width: 768px) 100vw, 700px"
-                className="object-cover"
+                className="object-cover rounded-md"
               />
             </AspectRatio>
           </div>
@@ -366,7 +366,7 @@ export const GaleriSlider = () => {
                 fill
                 alt="Image"
                 sizes="(max-width: 768px) 100vw, 700px"
-                className="object-cover"
+                className="object-cover rounded-md"
               />
             </AspectRatio>
           </div>
