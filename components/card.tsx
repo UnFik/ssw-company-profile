@@ -4,9 +4,10 @@ import { cn } from "@/lib/utils";
 
 import Image from "next/image";
 import Link from "next/link";
-import { AspectRatio } from "./Aspect-ratio";
+import { AspectRatio } from "./ui/aspect-ratio";
 import { Clock9, CircleDollarSign } from "lucide-react";
 import { CalendarDays, User } from "lucide-react";
+import { Skeleton } from "./ui/skeleton";
 
 interface cardImpianProps {}
 
@@ -287,7 +288,7 @@ const CardImpian = () => {
           <Image
             width={384}
             height={300}
-            src="/assets/seminar.png"
+            src="/assets/kemitraan.png"
             alt="Seminar SSW Griya Wulansari"
             className="rounded-t-lg object-cover"
           />
@@ -348,6 +349,22 @@ export const CardBestSeller: React.FC<BestSellerProps> = ({
   );
 };
 
+export const CardBestSellerSkeleton = () => {
+  return (
+    <div className="grid grid-cols-3 space-x-4">
+      <div className="lg:w-full h-full w-50 col-span-1">
+        <Skeleton className="w-[150px] h-[100px] rounded-lg" />
+      </div>
+      <div className="items-start justify-center h-full col-span-2">
+        <CardContent className="flex flex-col gap-3 w-full">
+          <Skeleton className="w-[100px] h-[20px] rounded-full" />
+          <Skeleton className="w-[150px] h-[20px] rounded-full" />
+        </CardContent>
+      </div>
+    </div>
+  );
+};
+
 interface ProdukProps {
   href: string;
   src: string;
@@ -390,6 +407,21 @@ export const CardProduk: React.FC<ProdukProps> = ({
         </p>
       </div>
     </Link>
+  );
+};
+
+export const CardProdukSkeleton = () => {
+  return (
+    <div className="text-card-foreground shadow-md rounded-lg w-6/6">
+      <div className="lg:w-full h-auto w-50">
+        <Skeleton className="w-full h-[200px] rounded-lg" />
+      </div>
+      <div className="py-5 px-2 space-y-4">
+        <Skeleton className="w-[100px] h-[20px] rounded-full" />
+        <Skeleton className="w-[80px] h-[20px] rounded-full" />
+        <Skeleton className="w-[150px] h-[20px] rounded-full" />
+      </div>
+    </div>
   );
 };
 
@@ -481,6 +513,39 @@ export const CardRekomendasi: React.FC<CardRekomendasiProps> = ({
         </p>
       </CardContent>
     </Link>
+  );
+};
+
+export const CardFormSkeleton = () => {
+  return (
+    <Card>
+      <CardHeader className="space-y-6">
+        <CardTitle>
+          <Skeleton className="w-[400px] mx-auto h-[20px] rounded-full" />
+        </CardTitle>
+        <CardDescription>
+          <Skeleton className="w-[700px] mx-auto h-[20px] rounded-full" />
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <Skeleton className="w-[200px] h-[20px] rounded-full" />
+      </CardContent>
+      <CardFooter>
+        <Skeleton className="w-[300px] h-[20px] rounded-full" />
+      </CardFooter>
+      <CardContent>
+        <Skeleton className="w-[200px] h-[20px] rounded-full" />
+      </CardContent>
+      <CardFooter>
+        <Skeleton className="w-[300px] h-[20px] rounded-full" />
+      </CardFooter>
+      <CardContent>
+        <Skeleton className="w-[200px] h-[20px] rounded-full" />
+      </CardContent>
+      <CardFooter>
+        <Skeleton className="w-[300px] h-[20px] rounded-full" />
+      </CardFooter>
+    </Card>
   );
 };
 

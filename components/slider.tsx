@@ -2,17 +2,11 @@
 
 import React, { forwardRef } from "react";
 import Slider from "react-slick";
-import { TestiCard } from "./Card";
+import { TestiCard } from "./card";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { AspectRatio } from "./Aspect-ratio";
-
-import banners from "@/public/assets/banner/banner.svg";
-import seminarcso from "@/public/assets/banner/seminar-banner.svg";
-import pkSeminar from "@/public/assets/banner/pk-banner.svg";
-import onlineSeminar from "@/public/assets/banner/seminaronline-banner.svg";
-import bdpSeminar from "@/public/assets/banner/bdp-banner.svg";
+import { AspectRatio } from "./ui/aspect-ratio";
 
 import testiData from "@/data/testimoni.json";
 
@@ -196,7 +190,6 @@ export const ProfitSlider = () => {
               className="lg:col-span-1 col-span-3"
               src="/icon/profit/illustration-profit2.svg"
               alt="Selling Illustration"
-              sizes="(max-width: 768px) 100vw, 700px"
               width={300}
               height={300}
             />

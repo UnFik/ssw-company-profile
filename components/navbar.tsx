@@ -8,10 +8,10 @@ import {
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Logo from "./Logo";
-import Nav, { NavBlog } from "./Nav";
+import Logo from "./logo";
+import Nav, { NavBlog } from "./nav";
 import Image from "next/image";
-import Breadcrumb from "./Breadcrumb";
+import Breadcrumb from "./breadcrumb";
 
 const TOP_OFFSET = 60;
 

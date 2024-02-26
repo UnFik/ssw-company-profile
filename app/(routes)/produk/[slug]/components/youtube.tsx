@@ -1,5 +1,5 @@
 import React from 'react'
-import { AspectRatio } from "@/components/ui/Aspect-ratio";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface YoutubeFrameProps {
     src: string;

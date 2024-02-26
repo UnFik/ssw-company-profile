@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "./Logo";
-import { buttonVariants } from "./Button";
+import Logo from "./logo";
+import { buttonVariants } from "./ui/button";
 import Link from "next/link";
 
 const Footer = () => {

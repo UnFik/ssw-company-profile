@@ -12,8 +12,8 @@ import Map, {
 } from "react-map-gl/maplibre";
 import Image from "next/image";
 import "maplibre-gl/dist/maplibre-gl.css";
-import seminarData from "../../data/seminar.json";
-import { ItemSlider } from "./Slider";
+import seminarData from "../data/seminar.json";
+import { ItemSlider } from "./slider";
 import Slider from "react-slick";
 
 const locations = seminarData;
