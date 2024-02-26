@@ -21,7 +21,6 @@ const ProdukDetailPage = () => {
   }
   return (
     <div>
-      <NavbarGeneral />
       <div className="md:container px-2 mt-10">
         <div className="flex flex-col md:flex-row gap-12 pb-10 border-b-2 border-black">
           <div className="lg:w-7/12 w-full h-auto mx-auto">
@@ -125,7 +124,6 @@ const ProdukDetailPage = () => {
         </h2>
       </div>
       <div className="mt-10"></div>
-      <Footer />
     </div>
   );
 };
