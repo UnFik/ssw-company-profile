@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Clock9, UserCircle } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { CardRekomendasi } from "@/components/ui/Card";
-import Footer from "@/components/ui/Footer";
+import { CardRekomendasi } from "@/components/card";
+import Footer from "@/components/footer";
 
 interface BlogData {
   slug: string;

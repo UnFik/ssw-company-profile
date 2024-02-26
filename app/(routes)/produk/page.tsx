@@ -4,18 +4,18 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-import { NavbarGeneral } from "@/components/ui/Navbar";
-import SearchBar from "@/components/ui/SearchBar";
+import { NavbarGeneral } from "@/components/navbar";
+import SearchBar from "@/components/searchBar";
 import { CheckboxWithText } from "@/components/ui/checkbox";
-import { CardBestSeller, CardProduk } from "@/components/ui/Card";
+import { CardBestSeller, CardProduk } from "@/components/card";
 import { useState, useCallback, useMemo, useEffect } from "react";
 import produkData from "@/data/produk.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useDebounce } from "use-debounce";
 
 import { FreeMode, Pagination } from "swiper/modules";
-import CheckboxButton from "@/components/ui/CheckboxButton";
-import Footer from "@/components/ui/Footer";
+import CheckboxButton from "@/components/ui/checkboxButton";
+import Footer from "@/components/footer";
 
 const ProdukPage = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -79,8 +79,7 @@ const ProdukPage = () => {
   }, [searchQuery, selectedCategories]);
 
   return (
-    <div>
-      <NavbarGeneral />
+    <>
       <div className="lg:hidden flex mb-7">
         <Swiper
           slidesPerView={3}
@@ -173,8 +172,7 @@ const ProdukPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

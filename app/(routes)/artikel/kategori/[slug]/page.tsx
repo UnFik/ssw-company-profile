@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import { CardBlog } from "@/components/ui/Card";
+import { CardBlog } from "@/components/card";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

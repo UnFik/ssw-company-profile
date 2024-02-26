@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { jsPDF } from "jspdf";
 import {
   Form,
@@ -21,9 +21,8 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-} from "@/components/ui/Card";
+} from "@/components/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import Logo from "@/components/ui/Logo";
 type FormValues = z.infer<typeof FormSchema>;
 import Image from "next/image";
 import {
@@ -34,8 +33,13 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 const FormPdf = () => {
+  const searchParams = useSearchParams();
+
+  const sponsor = searchParams.get("ref");
+  // console.log(sponsor);
   const router = useRouter();
   const form = useForm<FormValues>({
     resolver: zodResolver(FormSchema),
@@ -58,41 +62,47 @@ const FormPdf = () => {
       noRekening: "",
       paket: "1",
       pembayaran: "",
+      namaSponsor: sponsor?.toString() || "",
     },
   });
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     generatePDF(data);
-    router.push(`https://wa.me/6282114038541?text=Halo%2C%20Saya%20Ingin%20Mendaftar%20Kemitraan.%0A%0ANama%3A%20${data.nama}%0ANo.%20HP%3A%20${data.noHp}%0APaket%20Kemitraan%3A%20${data.paket}%0A%0ATerima%20Kasih`)
+    router.push(
+      `https://wa.me/6282114038541?text=Halo%2C%20Saya%20Ingin%20Mendaftar%20Kemitraan.%0A%0ANama%3A%20${data.nama}%0ANo.%20HP%3A%20${data.noHp}%0APaket%20Kemitraan%3A%20${data.paket}%0ASponsor%3A%20${sponsor}%0A%0ATerima%20Kasih`
+    );
   }
 
   //   const generatePdf = (e: React.MouseEvent<HTMLButtonElement>) => {};
 
   const generatePDF = (data: z.infer<typeof FormSchema>) => {
     function getPembayaran(paket: string) {
-      if (paket == "1") {
-        return "2.500.000";
-      } else if (paket == "3") {
-        return "7.500.000";
-      } else if (paket == "7") {
-        return "17.500.000";
-      } else if (paket == "15") {
-        return "37.500.000";
-      } else if (paket == "31") {
-        return "77.500.000";
+      switch (paket) {
+        case "1":
+          return "2.500.000";
+        case "3":
+          return "7.500.000";
+        case "7":
+          return "17.500.000";
+        case "15":
+          return "37.500.000";
+        case "31":
+          return "77.500.000";
+        default:
+          return "Paket tidak valid";
       }
     }
 
     const doc = new jsPDF();
 
     const img1 = "/logo/logo-ptbest.png";
+    const img2 = "/logo/logo-ssw.png";
     doc.addImage(img1, "PNG", 20, 10, 20, 30);
     doc.setFontSize(18);
     doc.setFont("courier", "bold");
     doc.text("APPLICATION FORM", 74, 23);
     doc.setFontSize(10);
     doc.text("FORMULIR PERMOHONAN MENJADI MITRA PT BEST", 60, 30);
-    const img2 = "/logo/logo-ssw.png";
     doc.addImage(img2, "PNG", 165, 10, 30, 30);
 
     doc.setFontSize(16);
@@ -439,6 +449,7 @@ const FormPdf = () => {
                       <FormControl>
                         <Input placeholder="Masukkan Bank..." {...field} />
                       </FormControl>
+                      <FormDescription>Contoh : Mandiri</FormDescription>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -480,6 +491,23 @@ const FormPdf = () => {
                           <SelectItem value="31">31 (PRIORITY)</SelectItem>
                         </SelectContent>
                       </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <h2 className="text-3xl font-semibold pt-10">Data Sponsor</h2>
+                <FormField
+                  control={form.control}
+                  name="namaSponsor"
+                  render={({ field }) => (
+                    <FormItem className="flex flex-col gap-3">
+                      <FormLabel>Nama Sponsor</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Masukkan Nama Sponsor (Opsional)"
+                          {...field}
+                        />
+                      </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}

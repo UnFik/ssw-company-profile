@@ -1,8 +1,8 @@
-import MapSeminar from "@/components/ui/MapSeminar";
-import { NavbarGeneral } from "@/components/ui/Navbar";
+import MapSeminar from "@/components/mapSeminar";
+import { NavbarGeneral } from "@/components/navbar";
 import Image from "next/image";
-import { CardSeminar } from "@/components/ui/Card";
-import Footer from "@/components/ui/Footer";
+import { CardSeminar } from "@/components/card";
+import Footer from "@/components/footer";
 import type { Metadata } from "next";
 import SeminarData from "@/data/seminar.json";
 

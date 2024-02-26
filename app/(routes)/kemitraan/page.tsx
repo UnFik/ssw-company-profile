@@ -1,12 +1,11 @@
-
-import { NavbarGeneral } from "@/components/ui/Navbar";
+import { NavbarGeneral } from "@/components/navbar";
 import React from "react";
-import { GaleriSlider, ProfitSlider } from "@/components/ui/Slider";
-import Cta, { CtaContact } from "@/components/ui/Cta";
+import { GaleriSlider, ProfitSlider } from "@/components/slider";
+import Cta, { CtaContact } from "@/components/cta";
 import Image from "next/image";
-import ProfitComponent from "@/components/ui/Profit";
-import { CardMitra } from "@/components/ui/Card";
-import Footer from "@/components/ui/Footer";
+import ProfitComponent from "@/components/profit";
+import { CardMitra } from "@/components/card";
+import Footer from "@/components/footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -50,7 +49,8 @@ const page = () => {
                 height={0}
               />
               <h4 className="md:text-3xl text-xs mx-auto text-white font-semibold leading-3 md:leading-8 w-10/12">
-                Selling <br />Profit
+                Selling <br />
+                Profit
               </h4>
             </div>
             <div className="flex flex-col mx-auto">
@@ -62,7 +62,8 @@ const page = () => {
                 height={0}
               />
               <h4 className="md:text-3xl text-xs mx-auto text-white font-semibold leading-3 md:leading-8 w-10/12">
-                Development <br />Profit
+                Development <br />
+                Profit
               </h4>
             </div>
             <div className="flex flex-col mx-auto">
@@ -74,7 +75,8 @@ const page = () => {
                 height={0}
               />
               <h4 className="md:text-3xl text-xs mx-auto text-white font-semibold leading-3 md:leading-8 w-10/12">
-                Daily <br />Workflow
+                Daily <br />
+                Workflow
               </h4>
             </div>
             <div className="flex flex-col mx-auto">
@@ -86,7 +88,8 @@ const page = () => {
                 height={0}
               />
               <h4 className="md:text-3xl text-xs mx-auto text-white font-semibold leading-3 md:leading-8 w-10/12">
-                Group <br />Rank
+                Group <br />
+                Rank
               </h4>
             </div>
           </div>
@@ -112,7 +115,9 @@ const page = () => {
       <div className="relative md:container px-4 py-20">
         <div className="w-full grid grid-cols-2 justify-items-center items-center">
           <div className="lg:col-span-2 col-span-3">
-            <h3 className="text-3xl font-bold text-center">Potensi Income Mitra SSW</h3>
+            <h3 className="text-3xl font-bold text-center">
+              Potensi Income Mitra SSW
+            </h3>
           </div>
         </div>
         <div className="mt-20 lg:mt-0"></div>
@@ -172,46 +177,46 @@ const page = () => {
           Pilihan Paket Kemitraan dan Potensinya
         </h1>
         <div className="flex flex-wrap justify-center gap-12 gap-y-5 mt-10 mx-auto w-full">
-            <CardMitra
-              title="basic"
-              hak="1"
-              produk="14"
-              keuntungan="1.2"
-              reward="1.6"
-              harga="2.500.000"
-            />
-            <CardMitra
-              title="reguler"
-              hak="3"
-              produk="42"
-              keuntungan="3.6"
-              reward="5"
-              harga="7.500.000"
-            />
-            <CardMitra
-              title="business"
-              hak="7"
-              produk="98"
-              keuntungan="8.4"
-              reward="15"
-              harga="17.500.000"
-            />
-            <CardMitra
-              title="executives"
-              hak="15"
-              produk="210"
-              keuntungan="18"
-              reward="25"
-              harga="37.500.000"
-            />
-            <CardMitra
-              title="priority"
-              hak="31"
-              produk="434"
-              keuntungan="37"
-              reward="51.7"
-              harga="77.500.000"
-            />
+          <CardMitra
+            title="basic"
+            hak="1"
+            produk="14"
+            keuntungan="1.2"
+            reward="1.6"
+            harga="2.500.000"
+          />
+          <CardMitra
+            title="reguler"
+            hak="3"
+            produk="42"
+            keuntungan="3.6"
+            reward="5"
+            harga="7.500.000"
+          />
+          <CardMitra
+            title="business"
+            hak="7"
+            produk="98"
+            keuntungan="8.4"
+            reward="15"
+            harga="17.500.000"
+          />
+          <CardMitra
+            title="executives"
+            hak="15"
+            produk="210"
+            keuntungan="18"
+            reward="25"
+            harga="37.500.000"
+          />
+          <CardMitra
+            title="priority"
+            hak="31"
+            produk="434"
+            keuntungan="37"
+            reward="51.7"
+            harga="77.500.000"
+          />
         </div>
       </div>
       <div className="bg-container py-20">

@@ -1,5 +1,5 @@
-import Navbar from "@/components/ui/Navbar";
-import { Button } from "@/components/ui/Button";
+import Navbar from "@/components/navbar";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -7,20 +7,18 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/Card";
+} from "@/components/card";
 import Image from "next/image";
-import { AspectRatio } from "@/components/ui/Aspect-ratio";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Link from "next/link";
-import { TestiSlider, GaleriSlider } from "@/components/ui/Slider";
+import { TestiSlider, GaleriSlider } from "@/components/slider";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/Accordion";
-import Footer from "@/components/ui/Footer";
-
-
+} from "@/components/ui/accordion";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -65,9 +63,7 @@ export default function Home() {
           </div>
           <div className="box bg-white/25 md:w-[15.9rem] w-24 h-36 align-bottom flex flex-col justify-center text-center rounded-tr-lg">
             <h2 className="lg:text-7xl md:text-4xl text-xl font-bold">200+</h2>
-            <h4 className="md:text-sm text-xs font-semibold">
-              Luxury Ambassador
-            </h4>
+            <h4 className="md:text-sm text-xs font-semibold">Ambassador</h4>
           </div>
         </div>
       </div>
@@ -86,7 +82,7 @@ export default function Home() {
                   <Image
                     width={384}
                     height={300}
-                    src="/assets/foto-wulansari.jpg"
+                    src="/assets/kemitraan.webp"
                     alt="Seminar SSW Griya Wulansari"
                     className="rounded-t-lg object-cover w-auto h-auto"
                   />

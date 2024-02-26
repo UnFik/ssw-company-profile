@@ -1,14 +1,14 @@
 "use client";
 
-import { Button } from "@/components/ui/Button";
-import Footer from "@/components/ui/Footer";
-import { NavbarGeneral } from "@/components/ui/Navbar";
+import { Button } from "@/components/ui/button";
+import Footer from "@/components/footer";
+import { NavbarGeneral } from "@/components/navbar";
 import Image from "next/image";
 import React from "react";
 import produkData from "@/data/produk.json";
 
 import { usePathname } from "next/navigation";
-import { AspectRatio } from "@/components/ui/Aspect-ratio";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const ProdukDetailPage = () => {
   const pathname = usePathname();

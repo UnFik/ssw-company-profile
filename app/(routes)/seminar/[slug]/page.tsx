@@ -4,7 +4,7 @@ import {
   Card,
   CardHeader,
   CardContent,
-} from "@/components/ui/Card";
+} from "@/components/card";
 import Image from "next/image";
 import React from "react";
 import SeminarData from "@/data/seminar.json";
@@ -23,10 +23,10 @@ import {
   FormDescription,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
-import { NavbarGeneral } from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
+import { NavbarGeneral } from "@/components/navbar";
+import Footer from "@/components/footer";
 type FormValues = z.infer<typeof FormSeminarScheme>;
 
 const BookFormSeminar = () => {
