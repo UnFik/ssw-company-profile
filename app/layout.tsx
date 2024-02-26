@@ -13,6 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://smartsinergyworld.com/"),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
