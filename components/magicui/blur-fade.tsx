@@ -5,11 +5,10 @@ import {
   AnimatePresence,
   motion,
   useInView,
-  UseInViewOptions,
   Variants,
 } from "framer-motion";
 
-type MarginType = UseInViewOptions["margin"];
+type MarginType = string;
 
 interface BlurFadeProps {
   children: React.ReactNode;
