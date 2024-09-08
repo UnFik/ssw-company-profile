@@ -1,8 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { NavbarGeneral } from "@/components/navbar";
-import Link from "next/link";
 import React from "react";
-import { Divide } from "lucide-react";
 
 const TentangKamiPage = () => {
   return (

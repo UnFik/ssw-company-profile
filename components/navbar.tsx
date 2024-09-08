@@ -17,14 +17,9 @@ const TOP_OFFSET = 60;
 
 const Navbar = () => {
   return (
-    <div className="text-text-primary dark:bg-d-background dark:text-d-text-primary md:pr-15 sticky top-0 z-20 mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between bg-transparent py-4 pl-5 pr-10 font-sans font-bold uppercase text-white dark:border-gray-800 lg:pl-0">
+    <header className="text-text-primary dark:bg-d-background dark:text-d-text-primary md:pr-15 sticky top-0 z-20 mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between bg-transparent py-4 pl-5 pr-10 font-sans font-bold uppercase text-white dark:border-gray-800 lg:pl-0">
       <Link href="/" className="flex gap-2">
-        <Image
-          src="/logo/logo-ssw.svg"
-          width={56}
-          height={56}
-          alt="Logo SSW"
-        />
+        <Image src="/logo/logo-ssw.svg" width={56} height={56} alt="Logo SSW" />
         <div className="m-auto hidden justify-center text-center font-semibold md:flex">
           SMART SINERGY WORLD
         </div>
@@ -33,11 +28,11 @@ const Navbar = () => {
       <NavigationMenu className="hidden lg:flex">
         <Link href="/formulir" legacyBehavior passHref>
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            Join Mitra
+            <nav>Join Mitra</nav>
           </NavigationMenuLink>
         </Link>
       </NavigationMenu>
-    </div>
+    </header>
   );
 };
 

@@ -180,42 +180,42 @@ const page = () => {
           <CardMitra
             title="basic"
             hak="1"
-            produk="14"
+            produk="16"
             keuntungan="1.2"
-            reward="1.6"
-            harga="2.500.000"
+            reward="3.67"
+            harga="2.850.000"
           />
           <CardMitra
             title="reguler"
             hak="3"
-            produk="42"
+            produk="48"
             keuntungan="3.6"
-            reward="5"
-            harga="7.500.000"
+            reward="11.01"
+            harga="8.350.000"
           />
           <CardMitra
             title="business"
             hak="7"
-            produk="98"
+            produk="112"
             keuntungan="8.4"
-            reward="15"
-            harga="17.500.000"
+            reward="25.69"
+            harga="19.350.000"
           />
           <CardMitra
             title="executives"
             hak="15"
-            produk="210"
+            produk="240"
             keuntungan="18"
-            reward="25"
-            harga="37.500.000"
+            reward="50.5"
+            harga="41.350.000"
           />
           <CardMitra
             title="priority"
             hak="31"
-            produk="434"
+            produk="496"
             keuntungan="37"
-            reward="51.7"
-            harga="77.500.000"
+            reward="113.77"
+            harga="84.350.000"
           />
         </div>
       </div>
